@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{oneTwoFree} Contact{% endblock %}
+
+{% block body %}
+    <h1>{Contact}</h1>
+    <a href="{{ path ('formulaire_contact') }}">Formulaire de contact</a>
+    <br>
+    <a href="{{ path ('formulaire_brief') }}">Brief</a>
+    <br>
+    <a href="{{ path ('formulaire_devis') }}">Demande de devis</a>
+{% endblock %}
