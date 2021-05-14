@@ -42,17 +42,4 @@ class FormulaireContactController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/formulaire/contact/success", name="contact_success")
-     */
-    /* public function success() {
-        return new Response("
-        <html>
-            <body>
-                <p>Les données ont été traitées</p>  
-                <a href=/>Retour</a>
-            </body>
-        </html>
-        ");
-    } */
 }
