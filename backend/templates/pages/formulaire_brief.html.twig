@@ -4,4 +4,9 @@
 
 {% block body %}
     <h1>{Brief}</h1>
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <button class="btn">{{ button_label|default('Envoyer') }}</button>
+    {{ form_rest(form) }}
+    {{ form_end(form) }}
 {% endblock %}

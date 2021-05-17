@@ -16,7 +16,7 @@ class FormulaireContactController extends AbstractController
     /**
      * @Route("/formulaire/contact", name="formulaire_contact", methods={"GET","POST"})
      */
-    public function index(Request $request): Response
+    public function index(Request $request, MailerInterface $mailer): Response
     {
         $contact=new Contacts();
         $form = $this->createForm(ContactType::class, $contact);
@@ -27,19 +27,18 @@ class FormulaireContactController extends AbstractController
             $entityManager->persist($contact);
             $entityManager->flush();
             
-            // send mail
-            /* $contactFormData = $form->getData();
-            $message = (new Email())
-                // ->from($contactFormData['email'])
-                ->from($contactFormData->getEmail())
-                ->to('philippe.mariou@colombbus.org')
-                ->subject('vous avez reçu unn email')
-                // ->text('Sender : '.$contactFormData['email'].\PHP_EOL.
-                ->text('Sender : '.$contactFormData->getEmail().\PHP_EOL.
-                    // $contactFormData['Message'],
-                    $contactFormData->getMessage(),
-                    'text/plain');
-            $mailer->send($message); */
+           /*  $email = (new Email())
+                ->from('hello@example.com')
+                ->to('contact@onetwofree.com')
+                //->cc('cc@example.com')
+                //->bcc('bcc@example.com')
+                //->replyTo('fabien@example.com')
+                //->priority(Email::PRIORITY_HIGH)
+                ->subject('Time for Symfony Mailer!')
+                ->text('Sending emails is fun again!')
+                ->html('<p>See Twig integration for better HTML integration!</p>');
+
+            $mailer->send($email); */
 
             //return $this->redirectToRoute('contact_success');
             return new Response("
