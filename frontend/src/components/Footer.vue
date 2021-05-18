@@ -1,5 +1,5 @@
 <template>
-  <div>oneTwoFree</div>
+  <div>©.oneTwoFree{}</div>
 </template>
 
 <script>
