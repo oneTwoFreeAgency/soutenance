@@ -7,7 +7,9 @@
       <!-- specify the link by passing the `to` prop. -->
       <!-- <router-link> will be rendered as an `<a>` tag by default -->
       <router-link to="/contact">aller sur contact |</router-link>
-      <router-link to="/bar">aller sur bar</router-link>
+      <router-link to="/talent"> aller sur talent |</router-link>
+      <router-link to="/works"> aller sur works |</router-link>
+      <router-link to="/agence"> aller sur l'agence</router-link>
     </p>
     <!-- route outlet -->
     <!-- component matched by the route will render here -->

@@ -6,13 +6,20 @@ import VueRouter from 'vue-router'
 
 Vue.config.productionTip = false
 import Contact from './page/Contact'
+import Works from './page/Works'
+import Talent from './page/Talent'
+import Agence from './page/Agence'
+
+
 
 // const Contact = { template: "<div>contact</div>" };
-const Bar = { template: "<div>bar</div>" };
+// const Bar = { template: "<div>bar</div>" };
 
 const routes = [
   { path: '/contact', name: 'contact', component: Contact },
-  { path: '/bar', name: 'bar', component: Bar }
+  { path: '/works', name: 'works', component: Works },
+  { path: '/talent', name: 'talent', component: Talent },
+  { path: '/agence', name: 'agence', component: Agence },
 ]
 
 const router = new VueRouter({
