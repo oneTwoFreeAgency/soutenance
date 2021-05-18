@@ -1,105 +1,51 @@
-<!DOCTYPE html>
-<html lang="fr">
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
-    <title>Vue|Fondamentals</title>
-</head>
+<div id="app">
+    <h1>Hello App!</h1>
+    <p>
+        <!-- use router-link component for navigation. -->
+        <!-- specify the link by passing the `to` prop. -->
+        <!-- `<router-link>` will be rendered as an `<a>` tag by default -->
+        <router-link to="/raphael">Go to raph</router-link>
+        <router-link to="/binetou">Go to bine</router-link>
+        <router-link to="/michel">Go to michel</router-link>
+    </p>
+    <!-- route outlet -->
+    <!-- component matched by the route will render here -->
+    <router-view></router-view>
+</div>
+<script>// 0. If using a module system, call Vue.use(VueRouter)
 
-<body>
-    <div id="shopping-list">
-        <div class="header">
-            <h1>{{ header.toLocaleUpperCase() }}</h1>
-            <button v-if="state === 'default'" class="btn btn-primary" @click="changeState('edit')">ajout
-                d'item</button>
-            <button v-else class="btn btn-cancel" @click="changeState('default')">annuler</button>
-        </div>
-        <div v-if="state === 'edit'" class="add-item-form">
-            <!-- v-on: peut être remplacer par le raccourci @ -->
-            <!-- @keyup.enter="" === v-on:keyup='' event qui prend en compte qd l'user press 'Entrer'// -->
-            <input type="text" @keyup.enter='saveItem' v-model='newItem' placeholder="ajout d'un item">
-            <!-- v-bind: peut être raccourci en : ':' v-bind:disabled === :disabled -->
-            <!--
-                :disabled="!newItem" === v-bind:disabled="newItem.length === 0" car newItem est une chaîne vide donc
-                le ! (contraire) signifie que disabled ne sera plus actif qd newItem ne sera plus une chaîne vide
-            -->
-            <button class="btn btn-primary" :disabled="!newItem" v-on:click='saveItem'>Save
-                item</button>
-        </div>
-        <ul>
-            <!-- 
-                :class="{strikeout: item.purchased}" === :class="[item.purchased ? 'strikeout' : '']"
-                On peut utilisé la syntaxe d'Objet (1re) ou la syntaxe Array (2nd),
-                l'Array syntax offre plus de controle dans l'template
-                Object syntax sera plus utilisé dans de simple conditions, afin d'garder le template plus propre
-             -->
-            <li v-for='item in reversedItems' :class="{strikeout: item.purchased}" @click="togglePurchased(item)">
-                {{ item.label }}
-            </li>
-        </ul>
-        <p v-if="items.length === 0">Vous avez tout acheter, merci !</p>
-    </div>
+    // 1. Define route components.
+    // These can be imported from other files
+    const Raphael = { template: '<div>raphael</div>' }
+    const Binetou = { template: '<div>binetou</div>' }
+    const Michel = { template: '<div>michel</div>' }
 
-    <script src="https://unpkg.com/vue"></script>
-    <script>
-        var shoopingList = new Vue({
-            el: '#shopping-list',
-            data: {
-                state: 'default',
-                header: 'shooping list app',
-                newItem: '',
-                items: [
-                    {
-                        label: '10 chapeaux',
-                        purchased: false,
-                        highPriority: false,
-                    },
-                    {
-                        label: '20 cups americaine',
-                        purchased: true,
-                        highPriority: false,
-                    },
-                    {
-                        label: '5 bouteilles',
-                        purchased: false,
-                        highPriority: true,
-                    }
-                ]
-            },
+    // 2. Define some routes
+    // Each route should map to a component. The "component" can
+    // either be an actual component constructor created via
+    // Vue.extend(), or just a component options object.
+    // We'll talk about nested routes later.
+    const routes = [
+        { path: '/raphael', component: Raphael },
+        { path: '/binetou', component: Binetou },
+        { path: '/michel', component: Michel }
+    ]
 
-            // computed ou methods ?
-            // On utilise les methods quand il faut changer data
-            // On utilise les computed qd il faut changer la présentation des data EXISTANTES
-            computed: {
-                reversedItems() {
-                    return this.items.slice(0).reverse();
-                }
-            },
-            methods: {
-                saveItem: function () {
-                    // Se if sert à empecher le @keyup.enter de fonctionner qd newItem est vide
-                    // sans pour autant grisé l'input comme le :disabled sur le button
-                    if (this.newItem.length > 0) {
-                        this.items.push({
-                            label: this.newItem,
-                            purchased: false
-                        });
-                        this.newItem = '';
-                    }
-                },
-                changeState: function (newState) {
-                    this.state = newState;
-                    this.newItem = '';
-                },
-                togglePurchased: function (item) {
-                    item.purchased = !item.purchased;
-                }
-            }
-        });
-    </script>
-</body>
+    // 3. Create the router instance and pass the `routes` option
+    // You can pass in additional options here, but let's
+    // keep it simple for now.
+    const router = new VueRouter({
+        routes
+    })
 
-</html>
+    // 4. Create and mount the root instance.
+    // Make sure to inject the router with the router option to make the
+    // whole app router-aware.
+    const app = new Vue({
+        router
+    }).$mount('#app')
+
+    // Now the app has started!</script>
