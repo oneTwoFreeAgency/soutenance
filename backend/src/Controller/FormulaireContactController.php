@@ -27,19 +27,20 @@ class FormulaireContactController extends AbstractController
             $entityManager->persist($contact);
             $entityManager->flush();
             
-           /*  $email = (new Email())
-                ->from('hello@example.com')
-                ->to('contact@onetwofree.com')
+            $contact = $form->getData();
+            $mail = (new Email())
+                ->from($contact->getEmail())
+                ->to('regis.leloup@10mentionweb.org')
                 //->cc('cc@example.com')
                 //->bcc('bcc@example.com')
                 //->replyTo('fabien@example.com')
                 //->priority(Email::PRIORITY_HIGH)
-                ->subject('Time for Symfony Mailer!')
-                ->text('Sending emails is fun again!')
+                ->subject('Nouvelle demande de contact')
+                ->text('Sender : '.$contact->getEmail().\PHP_EOL.$contact->getMessage(),'text/plain')
                 ->html('<p>See Twig integration for better HTML integration!</p>');
+            $mailer->send($mail);
 
-            $mailer->send($email); */
-
+           
             //return $this->redirectToRoute('contact_success');
             return new Response("
             <html>
