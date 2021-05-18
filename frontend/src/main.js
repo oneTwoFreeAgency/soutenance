@@ -1,16 +1,28 @@
 
-import Vue from 'vue'
+// import Vue from 'vue'
+import Vue from "vue/dist/vue.js"
 import App from './App.vue'
 import VueRouter from 'vue-router'
+import { BootstrapVue } from 'bootstrap-vue'
+
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+Vue.use(BootstrapVue)
 
 Vue.config.productionTip = false
 
-const Foo = { template: "<div>foo</div>" };
-const Bar = { template: "<div>bar</div>" };
+import Contact from './page/Contact'
+import Works from './page/Works'
+import Talent from './page/Talent'
+import Agence from './page/Agence'
+
 
 const routes = [
-  { path: '/foo', component: Foo },
-  { path: '/bar', component: Bar }
+  { path: '/contact', name: 'contact', component: Contact },
+  { path: '/works', name: 'works', component: Works },
+  { path: '/talent', name: 'talent', component: Talent },
+  { path: '/agence', name: 'agence', component: Agence },
 ]
 
 const router = new VueRouter({
@@ -21,4 +33,5 @@ Vue.use(VueRouter)
 new Vue({
   render: h => h(App),
   router,
-}).$mount('#app')
+})
+  .$mount('#app')
