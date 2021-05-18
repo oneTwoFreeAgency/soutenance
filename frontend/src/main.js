@@ -3,17 +3,20 @@
 import Vue from "vue/dist/vue.js"
 import App from './App.vue'
 import VueRouter from 'vue-router'
+import { BootstrapVue } from 'bootstrap-vue'
+
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+Vue.use(BootstrapVue)
 
 Vue.config.productionTip = false
+
 import Contact from './page/Contact'
 import Works from './page/Works'
 import Talent from './page/Talent'
 import Agence from './page/Agence'
 
-
-
-// const Contact = { template: "<div>contact</div>" };
-// const Bar = { template: "<div>bar</div>" };
 
 const routes = [
   { path: '/contact', name: 'contact', component: Contact },
