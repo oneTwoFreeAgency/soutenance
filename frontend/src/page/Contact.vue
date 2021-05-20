@@ -1,5 +1,8 @@
 <template>
-  <div class="hello">elemtn 1</div>
+  <div>
+    <h1>Contact</h1>
+    <p>Ceci est un test</p>
+  </div>
 </template>
 
 <script>

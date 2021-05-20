@@ -1,3 +1,6 @@
 <template>
-  <div class="hello">elemtn 2</div>
+  <div>
+    <h1>Contact</h1>
+    <p>Ceci est un test</p>
+  </div>
 </template>
