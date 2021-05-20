@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1>Contact</h1>
-    <p>Ceci est un test</p>
+    <h1>Talent</h1>
   </div>
 </template>
+
+<style scoped>
+</style>
