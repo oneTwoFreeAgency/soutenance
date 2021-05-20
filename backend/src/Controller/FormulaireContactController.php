@@ -30,7 +30,7 @@ class FormulaireContactController extends AbstractController
             $contact = $form->getData();
             $mail = (new Email())
                 ->from($contact->getEmail())
-                ->to('regis.leloup@10mentionweb.org')
+                ->to('philippe.mariou@colombbus.org')
                 //->cc('cc@example.com')
                 //->bcc('bcc@example.com')
                 //->replyTo('fabien@example.com')
@@ -46,7 +46,7 @@ class FormulaireContactController extends AbstractController
             <html>
                 <body>
                     <p>Le message a bien été envoyé</p>  
-                    <a href=/>Retour</a>
+                    <a href=\"/soutenance/backend/public/index/\">Retour</a>
                 </body>
             </html>
             ");
