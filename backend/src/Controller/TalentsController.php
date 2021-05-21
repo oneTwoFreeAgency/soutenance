@@ -13,9 +13,11 @@ class TalentsController extends AbstractController
      */
     public function index(): Response
     {
+
+        // $form =
         return $this->render('pages/talents.html.twig', [
             'controller_name' => 'TalentsController',
-            'form'=>''
+            // 'form'=> $form->createV
         ]);
     }
 }
