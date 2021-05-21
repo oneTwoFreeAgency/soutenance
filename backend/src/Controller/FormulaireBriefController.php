@@ -44,7 +44,7 @@ class FormulaireBriefController extends AbstractController
             <html>
                 <body>
                     <p>Le brief a bien été envoyé</p>  
-                    <a href=/>Retour</a>
+                    <a href=\"/soutenance/backend/public/index/\">Retour</a>
                 </body>
             </html>
             ");
