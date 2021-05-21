@@ -1,20 +1,18 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="dark" variant="info">
-      <b-navbar-brand href="#">.oneTwoFree{}</b-navbar-brand>
+    <b-navbar toggleable="" type="dark" variant="info">
+      <b-navbar-brand href="#">
+        <img src="../assets/image/LogoOne.jpg" alt="Logo de l'agence" />
+      </b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav>
+        <b-navbar-nav class="liens">
           <router-link
             to="/agence"
             custom
-            v-slot="{ href, route, navigate, isActive }"
+            v-slot="{ href, navigate, isActive }"
           >
-            <b-nav-item
-              class="wesh"
-              :active="isActive"
-              :href="href"
-              @click="navigate"
+            <b-nav-item :active="isActive" :href="href" @click="navigate"
               >l'agence</b-nav-item
             >
           </router-link>
@@ -22,27 +20,15 @@
           <router-link
             to="/talent"
             custom
-            v-slot="{ href, route, navigate, isActive }"
+            v-slot="{ href, navigate, isActive }"
           >
-            <b-nav-item
-              class="wesh"
-              :active="isActive"
-              :href="href"
-              @click="navigate"
+            <b-nav-item :active="isActive" :href="href" @click="navigate"
               >Talents</b-nav-item
             >
           </router-link>
 
-          <router-link
-            to="/works"
-            custom
-            v-slot="{ href, route, navigate, isActive }"
-          >
-            <b-nav-item
-              class="wesh"
-              :active="isActive"
-              :href="href"
-              @click="navigate"
+          <router-link to="/works" custom v-slot="{ href, navigate, isActive }">
+            <b-nav-item :active="isActive" :href="href" @click="navigate"
               >Works</b-nav-item
             >
           </router-link>
@@ -50,21 +36,24 @@
           <router-link
             to="/contact"
             custom
-            v-slot="{ href, route, navigate, isActive }"
+            v-slot="{ href, navigate, isActive }"
           >
-            <b-nav-item
-              class="wesh"
-              :active="isActive"
-              :href="href"
-              @click="navigate"
+            <b-nav-item :active="isActive" :href="href" @click="navigate"
               >Contact</b-nav-item
+            >
+          </router-link>
+          <router-link
+            to="/Mentions"
+            custom
+            v-slot="{ href, navigate, isActive }"
+          >
+            <b-nav-item :active="isActive" :href="href" @click="navigate"
+              >Mentions</b-nav-item
             >
           </router-link>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-    <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
-    <!-- <Base msg="Bienvenue sur Vue.js App" /> -->
 
     <!-- route outlet -->
     <!-- component matched by the route will render here -->
@@ -81,4 +70,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+img {
+  width: 200px;
+}
+
+.liens {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 </style>
+
+<!--
+  L'attribut 'toggleable=""' permet de savoir quand le menu burger apparait ou pas, exemple: toggleable="lg",
+  servira à a masquer le menu burger quand la taille de l'écran atteindra le breakpoint "large"
+-->
