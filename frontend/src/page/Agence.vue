@@ -1,28 +1,35 @@
 <template>
-  <div>
-    <h1>{ L'agence }</h1>
-    <div>
-      <h3>Notre histoire</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum cum culpa
-        id accusamus error recusandae veniam ab voluptatibus nemo veritatis, aut
-        odio ipsa sequi maxime ratione, dolores magni? Ullam, asperiores.
-      </p>
-    </div>
+  <b-container>
+    <!-- <v-parallax src="../assets/image/Slideagence1.jpg"></v-parallax> -->
+    <v-parallax
+      src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+    ></v-parallax>
+    <h1 class="text-center">{ L'agence }</h1>
+    <b-row>
+      <b-col>
+        <h3>Notre histoire</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum cum
+          culpa id accusamus error recusandae veniam ab voluptatibus nemo
+          veritatis, aut odio ipsa sequi maxime ratione, dolores magni? Ullam,
+          asperiores.
+        </p>
+      </b-col>
 
-    <div>
-      <h3>Notre concept</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sequi
-        harum eveniet a consequuntur cumque aut eius. Beatae, delectus fugiat.
-        Neque, quisquam reprehenderit? Neque ut, cupiditate dicta aliquam cumque
-        facilis.
-      </p>
-      <img src="#" alt="illustration agence" />
-      <img src="#" alt="illustration agence" />
-    </div>
+      <b-col>
+        <h3>Notre concept</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sequi
+          harum eveniet a consequuntur cumque aut eius. Beatae, delectus fugiat.
+          Neque, quisquam reprehenderit? Neque ut, cupiditate dicta aliquam
+          cumque facilis.
+        </p>
+        <img src="#" alt="illustration agence" />
+        <img src="#" alt="illustration agence" />
+      </b-col>
+    </b-row>
 
-    <h2>{ l'équipe }</h2>
+    <h2 class="text-center">{ l'équipe }</h2>
     <div>
       <h4>{ BINETOU }</h4>
       <img
@@ -128,7 +135,7 @@
         </a>
       </div>
     </div>
-  </div>
+  </b-container>
 </template>
 
 <style scoped>

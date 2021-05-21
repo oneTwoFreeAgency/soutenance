@@ -2,8 +2,8 @@
 
 namespace App\Controller;
 
-use App\Entity\Devis;
-use App\Form\DevisType;
+use App\Entity\Concours;
+use App\Form\ConcoursType;
 use Symfony\Component\Mime\Email;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Mailer\MailerInterface;
@@ -11,20 +11,20 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class FormulaireDevisController extends AbstractController
+class FormulaireConcoursController extends AbstractController
 {
     /**
-     * @Route("/formulaire/devis", name="formulaire_devis", methods={"GET","POST"})
+     * @Route("/formulaire/concours", name="formulaire_concours")
      */
     public function index(Request $request, MailerInterface $mailer): Response
     {
-        $devis=new Devis();
-        $form = $this->createForm(DevisType::class, $devis);
+        $concours=new Concours();
+        $form = $this->createForm(ConcoursType::class, $concours);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->persist($devis);
+            $entityManager->persist($concours);
             $entityManager->flush();
 
             $contact = $form->getData();
@@ -35,7 +35,7 @@ class FormulaireDevisController extends AbstractController
                 //->bcc('bcc@example.com')
                 //->replyTo('fabien@example.com')
                 //->priority(Email::PRIORITY_HIGH)
-                ->subject('Nouvelle demande de devis')
+                ->subject('Nouveau créatif !')
                 ->text('Sender : '.$contact->getEmail().\PHP_EOL.$contact->getMessage(),'text/plain')
                 ->html('<p>See Twig integration for better HTML integration!</p>');
             $mailer->send($mail);
@@ -43,14 +43,14 @@ class FormulaireDevisController extends AbstractController
             return new Response("
             <html>
                 <body>
-                    <p>Le devis a bien été envoyé</p>  
+                    <p>Le message a bien été envoyé</p>  
                     <a href=\"/soutenance/backend/public/index/\">Retour</a>
                 </body>
             </html>
             ");
         }
 
-        return $this->render('pages/formulaire_devis.html.twig', [
+        return $this->render('pages/formulaire_concours.html.twig', [
             'form' => $form->createView(),
         ]);
     }
