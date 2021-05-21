@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>{ Mentions légales }</h1>
+    <h1 class="text-center">{ Mentions légales }</h1>
 
     <h2>Informations légales</h2>
     <h3>1. Présentation du site.</h3>
