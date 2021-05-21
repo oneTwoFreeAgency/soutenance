@@ -15,6 +15,7 @@ class TalentsController extends AbstractController
     {
         return $this->render('pages/talents.html.twig', [
             'controller_name' => 'TalentsController',
+            'form'=>''
         ]);
     }
 }
