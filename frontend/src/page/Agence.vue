@@ -1,9 +1,12 @@
 <template>
   <b-container>
+    <img
+      class="agence"
+      src="../assets/image/Slideagence1.jpg"
+      alt="campagne agence"
+    />
     <!-- <v-parallax src="../assets/image/Slideagence1.jpg"></v-parallax> -->
-    <v-parallax
-      src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
-    ></v-parallax>
+
     <h1 class="text-center">{ L'agence }</h1>
     <b-row>
       <b-col>
@@ -15,7 +18,6 @@
           asperiores.
         </p>
       </b-col>
-
       <b-col>
         <h3>Notre concept</h3>
         <p>
@@ -30,111 +32,133 @@
     </b-row>
 
     <h2 class="text-center">{ l'équipe }</h2>
-    <div>
-      <h4>{ BINETOU }</h4>
-      <img
-        class="profil"
-        src="../assets/image/profilB.jpg"
-        alt="portrait Binetou"
-      />
-      <p>blablabla</p>
-      <div>
-        <a href="#">
-          <font-awesome-icon :icon="['fab', 'twitter']" />
+    <b-row>
+      <b-col class="text-center">
+        <h4>{ BINETOU }</h4>
+        <img
+          class="profil"
+          src="../assets/image/profilB.jpg"
+          alt="portrait Binetou"
+        />
+        <p>CHEFFE DE PROJET</p>
+        <div>
+          <a href="#">
+            <font-awesome-icon :icon="['fab', 'twitter']" size="2x" />
 
-          <font-awesome-icon icon="twitter" size="3x"></font-awesome-icon>
-        </a>
-        <a href="#">
-          <font-awesome-icon :icon="['fab', 'instagram']" />
+            <font-awesome-icon icon="twitter"></font-awesome-icon>
+          </a>
+          <a href="#">
+            <font-awesome-icon
+              :icon="['fab', 'instagram']"
+              size="2x"
+              class="mx-3"
+            />
 
-          <font-awesome-icon icon="intagram" size="3x"></font-awesome-icon>
-        </a>
+            <font-awesome-icon icon="intagram"></font-awesome-icon>
+          </a>
 
-        <a href="#">
-          <font-awesome-icon :icon="['fab', 'linkedin']" />
+          <a href="#">
+            <font-awesome-icon :icon="['fab', 'linkedin']" size="2x" />
 
-          <font-awesome-icon icon="linkedin" size="3x"></font-awesome-icon>
-        </a>
-      </div>
+            <font-awesome-icon icon="linkedin"></font-awesome-icon>
+          </a>
+        </div>
+      </b-col>
 
-      <h4>{ MICHEL }</h4>
-      <img
-        class="profil"
-        src="../assets/image/profilM.jpg"
-        alt="portrait MICHEL"
-      />
-      <p>blablabla</p>
-      <div>
-        <a href="#">
-          <font-awesome-icon :icon="['fab', 'twitter']" />
+      <b-col class="text-center">
+        <h4>{ MICHEL }</h4>
+        <img
+          class="profil"
+          src="../assets/image/profilM.jpg"
+          alt="portrait MICHEL"
+        />
+        <p>DESIGN / DEV</p>
+        <div>
+          <a href="#">
+            <font-awesome-icon :icon="['fab', 'twitter']" size="2x" />
 
-          <font-awesome-icon icon="twitter" size="3x"></font-awesome-icon>
-        </a>
-        <a href="#">
-          <font-awesome-icon :icon="['fab', 'instagram']" />
+            <font-awesome-icon icon="twitter"></font-awesome-icon>
+          </a>
+          <a href="#">
+            <font-awesome-icon
+              :icon="['fab', 'instagram']"
+              size="2x"
+              class="mx-3"
+            />
 
-          <font-awesome-icon icon="intagram" size="3x"></font-awesome-icon>
-        </a>
+            <font-awesome-icon icon="intagram"></font-awesome-icon>
+          </a>
 
-        <a href="#">
-          <font-awesome-icon :icon="['fab', 'linkedin']" />
+          <a href="#">
+            <font-awesome-icon :icon="['fab', 'linkedin']" size="2x" />
 
-          <font-awesome-icon icon="linkedin" size="3x"></font-awesome-icon>
-        </a>
-      </div>
+            <font-awesome-icon icon="linkedin"></font-awesome-icon>
+          </a>
+        </div>
+      </b-col>
+      <b-col class="text-center">
+        <h4>{ RAPHAËL }</h4>
+        <img
+          class="profil"
+          src="../assets/image/profilR.jpg"
+          alt="portrait RAPHAËL"
+        />
+        <p>DEVELOPPEUR FRONTEND</p>
+        <div class="">
+          <a href="#">
+            <font-awesome-icon :icon="['fab', 'twitter']" size="2x" />
 
-      <h4>{ RAPHAËL }</h4>
-      <img
-        class="profil"
-        src="../assets/image/profilR.jpg"
-        alt="portrait RAPHAËL"
-      />
-      <p>blablabla</p>
-      <div>
-        <a href="#">
-          <font-awesome-icon :icon="['fab', 'twitter']" />
+            <font-awesome-icon icon="twitter"></font-awesome-icon>
+          </a>
+          <a href="#">
+            <font-awesome-icon
+              :icon="['fab', 'instagram']"
+              size="2x"
+              class="mx-3"
+            />
 
-          <font-awesome-icon icon="twitter" size="3x"></font-awesome-icon>
-        </a>
-        <a href="#">
-          <font-awesome-icon :icon="['fab', 'instagram']" />
+            <font-awesome-icon icon="intagram"></font-awesome-icon>
+          </a>
 
-          <font-awesome-icon icon="intagram" size="3x"></font-awesome-icon>
-        </a>
+          <a href="#">
+            <font-awesome-icon :icon="['fab', 'linkedin']" size="2x" />
 
-        <a href="#">
-          <font-awesome-icon :icon="['fab', 'linkedin']" />
+            <font-awesome-icon icon="linkedin"></font-awesome-icon>
+          </a>
+        </div>
+      </b-col>
+      <b-col class="text-center">
+        <h4>{ PHILIPPE }</h4>
+        <img
+          class="profil"
+          src="../assets/image/profilP.jpg"
+          alt="portrait PHILIPPE"
+        />
+        <p>DEVELOPPEUR BACKEND</p>
+        <div>
+          <a href="#">
+            <font-awesome-icon :icon="['fab', 'twitter']" size="2x" />
 
-          <font-awesome-icon icon="linkedin" size="3x"></font-awesome-icon>
-        </a>
-      </div>
+            <font-awesome-icon icon="twitter"></font-awesome-icon>
+          </a>
+          <a href="#">
+            <font-awesome-icon
+              :icon="['fab', 'instagram']"
+              size="2x"
+              class="mx-3"
+            />
 
-      <h4>{ PHILIPPE }</h4>
-      <img
-        class="profil"
-        src="../assets/image/profilP.jpg"
-        alt="portrait PHILIPPE"
-      />
-      <p>blablabla</p>
-      <div>
-        <a href="#">
-          <font-awesome-icon :icon="['fab', 'twitter']" />
+            <font-awesome-icon icon="intagram"></font-awesome-icon>
+          </a>
 
-          <font-awesome-icon icon="twitter" size="3x"></font-awesome-icon>
-        </a>
-        <a href="#">
-          <font-awesome-icon :icon="['fab', 'instagram']" />
+          <a href="#">
+            <font-awesome-icon :icon="['fab', 'linkedin']" size="2x" />
 
-          <font-awesome-icon icon="intagram" size="3x"></font-awesome-icon>
-        </a>
-
-        <a href="#">
-          <font-awesome-icon :icon="['fab', 'linkedin']" />
-
-          <font-awesome-icon icon="linkedin" size="3x"></font-awesome-icon>
-        </a>
-      </div>
-    </div>
+            <font-awesome-icon icon="linkedin"></font-awesome-icon>
+          </a>
+        </div>
+      </b-col>
+    </b-row>
   </b-container>
 </template>
 
@@ -142,7 +166,7 @@
 .profil {
   width: 150px;
 }
-h4 {
-  font-family: Helvetica, sans-serif;
+.agence {
+  height: 300px;
 }
 </style>
