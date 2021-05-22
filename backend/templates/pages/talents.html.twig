@@ -1,9 +1,21 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{oneTwoFree} Talents
-{% endblock %}
+{% block title %}{oneTwoFree} Talents {% endblock %}
 
 {% block body %}
 	<h1>{Talents}</h1>
-	{# {% include 'pages/formulaire_concours.html.twig' %} #}
+	
+	<h2>{Concours créatif}</h2>
+	{{ form_start(form1) }}
+	{{ form_widget(form1) }}
+	<button class="btn">{{ button_label|default('Envoyer') }}</button>
+	{{ form_rest(form1) }}
+	{{ form_end(form1) }}
+
+	<h2>{Rejoindre la team OTF}</h2>
+	{{ form_start(form2) }}
+	{{ form_widget(form2) }}
+	<button class="btn">{{ button_label|default('Envoyer') }}</button>
+	{{ form_rest(form2) }}
+	{{ form_end(form2) }}
 {% endblock %}
