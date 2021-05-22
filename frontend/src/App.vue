@@ -19,4 +19,13 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: "FuturaCondensedExtraBold";
+  src: url(./assets/font/FuturaCondensedExtraBold.otf);
+}
+h1,
+h2,
+h3 {
+  font-family: "FuturaCondensedExtraBold";
+}
 </style>
