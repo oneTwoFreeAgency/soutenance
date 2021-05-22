@@ -41,7 +41,7 @@
         <p>test work</p>
       </b-col>
     </b-row>
-    <b-row class="mb-5">
+    <b-row>
       <b-col class="clients">
         <a href="#">
           <img src="../assets/image/logo-simple.jpg" alt="logo du client" />
