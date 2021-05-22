@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>{ Contact }</h1>
+  <b-container>
+    <h1 class="text-center">{ Contact }</h1>
 
     <h3>Informations pratiques</h3>
 
@@ -33,7 +33,7 @@
       <p>C'est quoi l'idée ?</p>
       <img src="#" alt="illustration brief / devis" />
     </div>
-  </div>
+  </b-container>
 </template>
 
 <script>
