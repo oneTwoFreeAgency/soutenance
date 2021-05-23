@@ -29,16 +29,16 @@ class TalentsController extends AbstractController
             $entityManager->persist($concours);
             $entityManager->flush();
 
-            $contact = $formConcours->getData();
+            $user = $formConcours->getData();
             $mail = (new Email())
-                ->from($contact->getEmail())
+                ->from($user->getEmail())
                 ->to('philippe.mariou@colombbus.org')
                 //->cc('cc@example.com')
                 //->bcc('bcc@example.com')
                 //->replyTo('fabien@example.com')
                 //->priority(Email::PRIORITY_HIGH)
                 ->subject('Nouveau créatif !')
-                ->text('Sender : '.$contact->getEmail().\PHP_EOL.$contact->getMessage(),'text/plain')
+                ->text('Sender : '.$user->getEmail().\PHP_EOL.$user->getMessage(),'text/plain')
                 ->html('<p>See Twig integration for better HTML integration!</p>');
             $mailer->send($mail);
             
@@ -61,16 +61,16 @@ class TalentsController extends AbstractController
             $entityManager->persist($candidat);
             $entityManager->flush();
 
-            $contact = $formCandidat->getData();
+            $user = $formCandidat->getData();
             $mail = (new Email())
-                ->from($contact->getEmail())
+                ->from($user->getEmail())
                 ->to('philippe.mariou@colombbus.org')
                 //->cc('cc@example.com')
                 //->bcc('bcc@example.com')
                 //->replyTo('fabien@example.com')
                 //->priority(Email::PRIORITY_HIGH)
                 ->subject('Nouveau candidat !')
-                ->text('Sender : '.$contact->getEmail().\PHP_EOL.$contact->getMessage(),'text/plain')
+                ->text('Sender : '.$user->getEmail().\PHP_EOL.$user->getMessage(),'text/plain')
                 ->html('<p>See Twig integration for better HTML integration!</p>');
             $mailer->send($mail);
             

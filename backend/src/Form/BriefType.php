@@ -4,6 +4,7 @@ namespace App\Form;
 
 use App\Entity\Brief;
 use Symfony\Component\Form\AbstractType;
+use Vich\UploaderBundle\Form\Type\VichFileType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -18,6 +19,15 @@ class BriefType extends AbstractType
             ->add('telephone')
             ->add('email')
             ->add('message')
+            ->add('document')
+            ->add('file', VichFileType::class, [
+                'required' => false,
+                'allow_delete' => true,
+                'delete_label' => '...',
+                'download_uri' => '...',
+                'download_label' => '...',
+                'asset_helper' => true,
+            ])
         ;
     }
 
