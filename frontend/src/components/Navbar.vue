@@ -2,8 +2,13 @@
   <div>
     <b-navbar toggleable="" type="dark" variant="info">
       <b-navbar-brand href="#">
-        <img src="../assets/image/LogoOne.jpg" alt="Logo de l'agence" />
+        <img src="../assets/image/LogoOne.jpg" alt="Slogan de l'agence" />
       </b-navbar-brand>
+      <img
+        src="../assets/image/slogan.jpg"
+        alt="Logo de l'agence"
+        class="slogan"
+      />
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="liens">
@@ -73,7 +78,9 @@ export default {
 img {
   width: 200px;
 }
-
+.slogan {
+  width: 390px;
+}
 .liens {
   display: flex;
   flex-direction: row;
