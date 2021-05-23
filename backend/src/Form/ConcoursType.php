@@ -4,6 +4,7 @@ namespace App\Form;
 
 use App\Entity\Concours;
 use Symfony\Component\Form\AbstractType;
+use Vich\UploaderBundle\Form\Type\VichFileType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -16,6 +17,14 @@ class ConcoursType extends AbstractType
             ->add('prenom')
             ->add('email')
             ->add('message')
+            ->add('file', VichFileType::class, [
+                'required' => false,
+                'allow_delete' => true,
+                'delete_label' => '...',
+                'download_uri' => '...',
+                'download_label' => '...',
+                'asset_helper' => true,
+            ])
         ;
     }
 

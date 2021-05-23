@@ -4,9 +4,12 @@ namespace App\Entity;
 
 use App\Repository\DevisRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
  * @ORM\Entity(repositoryClass=DevisRepository::class)
+ * @Vich\Uploadable
  */
 class Devis
 {
@@ -56,6 +59,17 @@ class Devis
      * @ORM\Column(type="string", length=1048)
      */
     private $message;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $document;
+
+    /**
+     * @Vich\UploadableField(mapping="product_images", fileNameProperty="document")
+     * @var File
+     */
+    private $file;
 
     public function getId(): ?int
     {
@@ -156,5 +170,35 @@ class Devis
         $this->message = $message;
 
         return $this;
+    }
+
+    public function getDocument(): ?string
+    {
+        return $this->document;
+    }
+
+    public function setDocument($document): self
+    {
+        $this->document = $document;
+
+        return $this;
+    }
+
+    public function setFile(File $document = null)
+    {
+        $this->file = $document;
+
+        // VERY IMPORTANT:
+        // It is required that at least one field changes if you are using Doctrine,
+        // otherwise the event listeners won't be called and the file is lost
+        // if ($document) {
+            // if 'updatedAt' is not defined in your entity, use another property
+            // $this->updatedAt = new \DateTime('now');
+        // }
+    }
+
+    public function getFile()
+    {
+        return $this->file;
     }
 }

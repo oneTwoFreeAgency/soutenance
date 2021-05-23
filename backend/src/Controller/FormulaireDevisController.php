@@ -27,16 +27,16 @@ class FormulaireDevisController extends AbstractController
             $entityManager->persist($devis);
             $entityManager->flush();
 
-            $contact = $form->getData();
+            $user = $form->getData();
             $mail = (new Email())
-                ->from($contact->getEmail())
+                ->from($user->getEmail())
                 ->to('philippe.mariou@colombbus.org')
                 //->cc('cc@example.com')
                 //->bcc('bcc@example.com')
                 //->replyTo('fabien@example.com')
                 //->priority(Email::PRIORITY_HIGH)
                 ->subject('Nouvelle demande de devis')
-                ->text('Sender : '.$contact->getEmail().\PHP_EOL.$contact->getMessage(),'text/plain')
+                ->text('Sender : '.$user->getEmail().\PHP_EOL.$user->getMessage(),'text/plain')
                 ->html('<p>See Twig integration for better HTML integration!</p>');
             $mailer->send($mail);
             

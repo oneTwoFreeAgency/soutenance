@@ -2,37 +2,36 @@
 
 namespace App\Form;
 
-use App\Entity\Candidats;
+use App\Entity\Product;
 use Symfony\Component\Form\AbstractType;
-use Vich\UploaderBundle\Form\Type\VichFileType;
 use Symfony\Component\Form\FormBuilderInterface;
+use Vich\UploaderBundle\Form\Type\VichImageType;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class CandidatType extends AbstractType
+class ProductType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('nom')
-            ->add('prenom')
-            ->add('email')
-            ->add('message')
-            ->add('document')
-            ->add('file', VichFileType::class, [
+            ->add('image')
+            ->add('imageFile', VichImageType::class, [
                 'required' => false,
                 'allow_delete' => true,
                 'delete_label' => '...',
-                'download_uri' => '...',
                 'download_label' => '...',
+                'download_uri' => true,
+                'image_uri' => true,
+                // 'imagine_pattern' => '...',
                 'asset_helper' => true,
             ])
+            ->add('updatedAt')
         ;
     }
 
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
-            'data_class' => Candidats::class,
+            'data_class' => Product::class,
         ]);
     }
 }
