@@ -1,5 +1,5 @@
 <template>
-  <div class="footer mt-4">
+  <div class="footer mt-4 py-4">
     <b-row align-h="between">
       <b-col cols="3">
         <img
