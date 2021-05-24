@@ -6,16 +6,17 @@
       <b-col>
         <b-row>
           <b-col>
+            <p>Gagnes ta 1ère campagne chez .oneTwoFree !</p>
             <!-- place pour le formulaire -->
             <!-- <b-form></b-form> -->
           </b-col>
           <b-col>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur,
-              quos! Veritatis quidem ex magnam minus veniam similique quos, esse
-              dolore sit vel, repudiandae libero cupiditate? Illo excepturi
-              illum consequatur ad.
-            </p>
+            <p>Merlin l'enchanteur t'attend !</p>
+            <span>3, 2, 1, lances-toi</span>
+            <img
+              src="../assets/image/podium.jpg"
+              alt="illustration concours créatif onetwofree agence"
+            />
           </b-col>
         </b-row>
       </b-col>
@@ -30,17 +31,14 @@
     <b-row>
       <b-col>
         <h2>{ Rejoindre la team OTF }</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, hic
-          aliquam dicta ducimus autem architecto voluptas officia rerum eos
-          tenetur! Dignissimos soluta minus adipisci beatae exercitationem
-          assumenda expedita quia quaerat? Enim incidunt quam laudantium veniam
-          cum, dolorem dolores molestias atque adipisci nesciunt quos, libero
-          laboriosam optio facilis, porro odit nostrum aut quo commodi
-          accusamus. Nam quos officiis maxime debitis nobis.
-        </p>
+        <p>Want to be Free ?</p>
+        <img
+          src="../assets/image/Désx3.jpg"
+          alt="illustration talent onetwofree agence"
+        />
       </b-col>
       <b-col>
+        <p>Tu es Free-lance, rejoins la famille Free</p>
         <!-- Place pour le formulaire -->
         <!-- <b-form></b-form> -->
       </b-col>
@@ -49,4 +47,7 @@
 </template>
 
 <style scoped>
+img {
+  width: 300px;
+}
 </style>
