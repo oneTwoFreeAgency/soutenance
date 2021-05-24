@@ -44,7 +44,7 @@
             <h4>{ BINETOU }</h4>
             <img
               class="profil"
-              src="../assets/image/profilB.jpg"
+              src="../assets/image/profilBblanc.png"
               alt="portrait Binetou"
             />
             <p>CHEFFE DE PROJET</p>
@@ -74,9 +74,10 @@
 
           <b-col class="text-center">
             <h4>{ MICHEL }</h4>
+
             <img
               class="profil"
-              src="../assets/image/profilM.jpg"
+              src="../assets/image/profilMjaune.png"
               alt="portrait MICHEL"
             />
             <p>DIRECTEUR ARTISTIQUE</p>
@@ -108,7 +109,7 @@
             <h4>{ RAPHAËL }</h4>
             <img
               class="profil"
-              src="../assets/image/profilR.jpg"
+              src="../assets/image/profilRjaune.png"
               alt="portrait RAPHAËL"
             />
             <p>DEVELOPPEUR FRONTEND</p>
@@ -139,7 +140,7 @@
             <h4>{ PHILIPPE }</h4>
             <img
               class="profil"
-              src="../assets/image/profilP.jpg"
+              src="../assets/image/profilPjaune.png"
               alt="portrait PHILIPPE"
             />
             <p>DEVELOPPEUR BACKEND</p>
