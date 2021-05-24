@@ -42,6 +42,8 @@ import Works from './page/Works'
 import Talent from './page/Talent'
 import Agence from './page/Agence'
 import Mentions from './page/Mentions'
+import Accueil from './page/Accueil'
+
 
 
 
@@ -51,6 +53,8 @@ const routes = [
   { path: '/talent', name: 'talent', component: Talent },
   { path: '/agence', name: 'agence', component: Agence },
   { path: '/Mentions', name: 'Mentions', component: Mentions },
+  { path: '/Accueil', name: 'Accueil', component: Accueil },
+
 
 ]
 
