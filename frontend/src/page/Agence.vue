@@ -1,6 +1,6 @@
 <template id="marker2">
   <b-container fluid>
-    <div class="parallax"></div>
+    <div class="parallax mx-0"></div>
     <b-container>
       <section class="section">
         <h1 class="text-center">{ L'agence }</h1>
@@ -28,7 +28,7 @@
         </b-row>
       </section>
     </b-container>
-    <div class="parallax2"></div>
+    <div class="parallax2 mx-0"></div>
     <b-container>
       <section class="section">
         <h2 class="text-center">{ l'équipe }</h2>
@@ -72,7 +72,8 @@
               src="../assets/image/profilM.jpg"
               alt="portrait MICHEL"
             />
-            <p>DESIGN / DEV</p>
+            <p>DIRECTEUR ARTISTIQUE</p>
+            <p>DESIGN GRAPHIQUE / DEV</p>
             <div>
               <a href="#">
                 <font-awesome-icon :icon="['fab', 'twitter']" size="2x" />
