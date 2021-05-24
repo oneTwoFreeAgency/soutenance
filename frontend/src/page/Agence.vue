@@ -168,18 +168,18 @@
 <style scoped>
 .parallax {
   /* The image used */
-  background-image: url("../assets/image/Slideagence1.jpg");
+  background-image: url("../assets/image/slideone1aerobic.png");
   /* Set a specific height */
-  min-height: 380px;
+  min-height: 300px;
   /* Create the parallax scrolling effect */
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .parallax2 {
   /* The image used */
-  background-image: url("../assets/image/SlideFree_algerie.jpg");
+  background-image: url("../assets/image/Slideagence1.jpg");
 
   /* Set a specific height */
   min-height: 300px;
@@ -192,9 +192,6 @@
 }
 .profil {
   width: 150px;
-}
-.agence {
-  width: 100%;
 }
 .section {
   background-color: #dcdcdc;
