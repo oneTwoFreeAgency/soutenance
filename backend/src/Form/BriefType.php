@@ -19,7 +19,6 @@ class BriefType extends AbstractType
             ->add('telephone')
             ->add('email')
             ->add('message')
-            ->add('document')
             ->add('file', VichFileType::class, [
                 'required' => false,
                 'allow_delete' => true,

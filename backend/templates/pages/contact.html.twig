@@ -1,12 +1,13 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{Contact}{% endblock %}
+{% block title %}{Contact}
+{% endblock %}
 
 {% block body %}
-    <h1>{Contact}</h1>
-    <a href="{{ path ('formulaire_contact') }}">Contact</a>
-    <br>
-    <a href="{{ path ('formulaire_brief') }}">Brief</a>
-    <br>
-    <a href="{{ path ('formulaire_devis') }}">Devis</a>
+	<h1>{Contact}</h1>
+	<a href="{{ path ('formulaire_contact') }}">Contact</a>
+	<br>
+	<a href="{{ path ('devis') }}">Devis</a>
+	<br>
+	{# <a href="{{ path ('formulaire_devis') }}">Devis</a> #}
 {% endblock %}
