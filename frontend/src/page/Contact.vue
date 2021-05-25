@@ -17,9 +17,11 @@
     </div>
 
     <address>
-      <p>Adresse : 10 rue du Terrage, 75010 PARIS</p>
-      <a href="tel:+33777524387">Téléphone : 07.77.52.43.87</a>
-      <a href="mailto:ag.one.two.free@gmail.com"
+      <p class="text-white">Adresse : 10 rue du Terrage, 75010 PARIS</p>
+      <a class="text-white" href="tel:+33777524387"
+        >Téléphone : 07.77.52.43.87</a
+      >
+      <a class="text-white" href="mailto:ag.one.two.free@gmail.com"
         >Email :ag.one.two.free@gmail.com</a
       >
     </address>
@@ -29,7 +31,7 @@
       <img src="#" alt="illustration Contact" />
     </div>
     <div>
-      <h2>C'est vous le patron !</h2>
+      <h2>Le patron c'est Vous !</h2>
       <p>C'est quoi l'idée ?</p>
       <img src="#" alt="illustration brief / devis" />
     </div>
