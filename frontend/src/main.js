@@ -55,6 +55,7 @@ const routes = [
   { path: '/Mentions', name: 'Mentions', component: Mentions },
   { path: '/Accueil', name: 'Accueil', component: Accueil },
   { path: '/Backend', name: 'Backend', component: Backend },
+  { path: '/', redirect: { name: 'Accueil' }, component: Accueil }
 
 
 ]
