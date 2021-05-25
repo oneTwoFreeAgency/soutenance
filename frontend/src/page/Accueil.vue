@@ -1,56 +1,84 @@
 <template id="marker2">
-  <b-container fluid>
+  <b-container fluid style="background-color: #308c99">
     <h3>Notre histoire</h3>
 
-    <img
-      data-aos="fade-right"
-      src="../assets/image/bouteillebulles.png"
-      alt="bouteille bulles agence"
-    />
-    <img
-      src="../assets/image/Champmobilebulles.png"
-      alt="mobile bulles agence"
-    />
-    <img
-      src="../assets/image/Champtablettebulles.png"
-      alt="tablette bulles agence"
-    />
-    <img
-      src="../assets/image/champordibulles.png"
-      alt="ordinateur bulles agence"
-    />
+    <div>
+      <img
+        class="bouteillevide"
+        src="../assets/image/bouteillevide.png"
+        alt="bouteille vide agence"
+      />
+    </div>
+
+    <div>
+      <img
+        class="boutbulles"
+        src="../assets/image/bouteillebulles.png"
+        alt="bouteille bulles agence"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      />
+    </div>
+    <div>
+      <img
+        class="mobilebulles"
+        src="../assets/image/Champmobilebulles.png"
+        alt="mobile bulles agence"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      />
+    </div>
+    <div>
+      <img
+        class="tablettebulles"
+        src="../assets/image/Champtablettebulles.png"
+        alt="tablette bulles agence"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+      />
+    </div>
+    <div>
+      <img
+        class="ordibulles"
+        src="../assets/image/champordibulles.png"
+        alt="ordinateur bulles agence"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      />
+    </div>
   </b-container>
 </template>
 
-<style scoped>
-.parallax {
-  /* The image used */
-  background-image: url("../assets/image/slideone1aerobic.png");
-  /* Set a specific height */
-  min-height: 300px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.parallax2 {
-  /* The image used */
-  background-image: url("../assets/image/Slideagence1.jpg");
+<script>
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-  /* Set a specific height */
-  min-height: 300px;
+export default {
+  created() {
+    AOS.init();
+  },
+};
+</script>
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+<style >
+.boutbulles {
+  width: 350px;
 }
-.profil {
-  width: 150px;
+.mobilebulles {
+  width: 100px;
 }
-.section {
-  background-color: #dcdcdc;
+.tablettebulles {
+  width: 200px;
+}
+.ordibulles {
+  width: 300px;
+}
+body,
+nav.navbar,
+html {
+  background-color: #308c99 !important;
 }
 </style>
