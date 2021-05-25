@@ -1,6 +1,6 @@
 <template id="marker2">
   <b-container fluid style="background-color: #308c99">
-    <h3>Notre histoire</h3>
+    <h3>Nous</h3>
 
     <div>
       <img
@@ -64,6 +64,9 @@ export default {
 </script>
 
 <style >
+.boutvide {
+  width: 300px;
+}
 .boutbulles {
   width: 350px;
 }
