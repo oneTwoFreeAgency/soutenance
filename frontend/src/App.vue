@@ -23,6 +23,11 @@ export default {
   font-family: "FuturaCondensedExtraBold";
   src: url(./assets/font/FuturaCondensedExtraBold.otf);
 }
+
+body {
+  overflow-x: hidden;
+}
+
 h1,
 h2,
 h3,
