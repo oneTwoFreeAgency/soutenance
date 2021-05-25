@@ -49,6 +49,11 @@
             >Mentions légales</a
           >
         </router-link>
+        <a
+          href="http://localhost/soutenance/backend/public/index"
+          class="d-block text-right mt-3"
+          >Lien Backend</a
+        >
       </b-col>
     </b-row>
   </div>
