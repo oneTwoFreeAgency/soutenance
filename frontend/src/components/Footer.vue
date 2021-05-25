@@ -10,39 +10,47 @@
         />
       </b-col>
       <b-col cols="6" class="coordonnées">
-        <div>
+        <div class="mb-2">
           <img
-            src="../assets/image/telephoneicone.png"
+            src="../assets/image/telephoneiconeblanc.png"
             alt="telephone agence"
           />
-          <a href="tel:+33777524387">07.77.52.43.87</a>
+          <a class="text-white" href="tel:+33777524387">07.77.52.43.87</a>
         </div>
-        <div>
-          <img src="../assets/image/arobase.png" alt="email agence" />
-          <a href="mailto:onetwofreeagency@gmail.com"
+        <div class="mb-2">
+          <img src="../assets/image/arobaseblanc.png" alt="email agence" />
+          <a class="text-white" href="mailto:onetwofreeagency@gmail.com"
             >onetwofreeagency@gmail.com</a
           >
         </div>
         <div>
-          <img src="../assets/image/mapiconeblanc.png" alt="adresse agence" />
-          <span>10 rue du Terrage, 75010, Paris</span>
+          <img src="../assets/image/mapiconeBLANC1.png" alt="adresse agence" />
+          <span class="text-white">10 rue du Terrage, 75010, Paris</span>
         </div>
       </b-col>
       <b-col>
         <b-row> </b-row>
         <div class="reseaux text-right">
-          <a href="https://twitter.com/OneTwoFree20" target="_blank">
+          <a
+            class="text-white"
+            href="https://twitter.com/OneTwoFree20"
+            target="_blank"
+          >
             <font-awesome-icon :icon="['fab', 'twitter']" size="3x" />
 
             <font-awesome-icon icon="twitter"></font-awesome-icon>
           </a>
-          <a href="https://www.instagram.com/onetwofreeteam/" target="_blank">
+          <a
+            class="text-white"
+            href="https://www.instagram.com/onetwofreeteam/"
+            target="_blank"
+          >
             <font-awesome-icon :icon="['fab', 'instagram']" size="3x" />
 
             <font-awesome-icon icon="intagram"></font-awesome-icon>
           </a>
 
-          <a href="#">
+          <a class="text-white" href="#">
             <font-awesome-icon :icon="['fab', 'linkedin']" size="3x" />
 
             <font-awesome-icon icon="linkedin"></font-awesome-icon>
@@ -57,13 +65,13 @@
             :active="isActive"
             :href="href"
             @click="navigate"
-            class="d-block text-right mt-3"
+            class="d-block text-right mt-3 text-white"
             >Mentions légales</a
           >
         </router-link>
         <a
           href="http://localhost/soutenance/backend/public/index"
-          class="d-block text-right mt-3"
+          class="d-block text-right mt-3 text-white"
           >Lien Backend</a
         >
       </b-col>
