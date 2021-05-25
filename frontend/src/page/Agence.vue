@@ -2,9 +2,9 @@
   <b-container fluid>
     <div class="parallax mx-0"></div>
     <b-container>
-      <section class="section">
+      <section class="section p-5">
         <h1 class="text-center">{ L'agence }</h1>
-        <b-row>
+        <b-row class="mt-5">
           <b-col>
             <h3>Notre histoire</h3>
             <p>
@@ -202,6 +202,6 @@
   width: 150px;
 }
 .section {
-  background-color: #dcdcdc;
+  background-color: #ffffff;
 }
 </style>
