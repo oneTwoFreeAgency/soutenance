@@ -70,9 +70,9 @@
           >
         </router-link>
         <a
-          href="http://localhost/soutenance/backend/public/index"
-          class="d-block text-right mt-3 text-white"
-          >Lien Backend</a
+          href="http://localhost/soutenance/backend/public/admin"
+          class="d-block text-right mt-3"
+          >Zone Admin</a
         >
       </b-col>
     </b-row>

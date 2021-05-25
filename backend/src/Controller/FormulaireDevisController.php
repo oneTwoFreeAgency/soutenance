@@ -2,7 +2,9 @@
 
 namespace App\Controller;
 
+use App\Entity\Brief;
 use App\Entity\Devis;
+use App\Form\BriefType;
 use App\Form\DevisType;
 use Symfony\Component\Mime\Email;
 use Symfony\Component\HttpFoundation\Request;
@@ -14,20 +16,26 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class FormulaireDevisController extends AbstractController
 {
     /**
-     * @Route("/formulaire/devis", name="formulaire_devis", methods={"GET","POST"})
+     * @Route("/formulaire/devis", name="devis", methods={"GET","POST"})
      */
     public function index(Request $request, MailerInterface $mailer): Response
     {
         $devis=new Devis();
-        $form = $this->createForm(DevisType::class, $devis);
-        $form->handleRequest($request);
+        $formDevis = $this->createForm(DevisType::class, $devis);
+        $formDevis->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid()) {
+        if ($formDevis->isSubmitted() && $formDevis->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($devis);
             $entityManager->flush();
 
-            $user = $form->getData();
+            $user = $formDevis->getData();
+        /*     if($user->getDocument()) {
+                $url =  './uploads/images/products/' . $user->getDocument();
+            } else {
+                $url=null;
+            } */
+            $url =  './uploads/images/products/' . $user->getDocument();
             $mail = (new Email())
                 ->from($user->getEmail())
                 ->to('philippe.mariou@colombbus.org')
@@ -37,21 +45,61 @@ class FormulaireDevisController extends AbstractController
                 //->priority(Email::PRIORITY_HIGH)
                 ->subject('Nouvelle demande de devis')
                 ->text('Sender : '.$user->getEmail().\PHP_EOL.$user->getMessage(),'text/plain')
-                ->html('<p>See Twig integration for better HTML integration!</p>');
+                ->html('<p>See Twig integration for better HTML integration!</p>')
+                ->attachFromPath($url)
+                ;
             $mailer->send($mail);
             
+            $url = $this->generateUrl('index');
             return new Response("
             <html>
                 <body>
                     <p>Le devis a bien été envoyé</p>  
-                    <a href=\"/soutenance/backend/public/index/\">Retour</a>
+                    <a href=\"$url\">Retour</a>
+                </body>
+            </html>
+            ");
+        }
+
+        $brief=new Brief();
+        $formBrief = $this->createForm(BriefType::class, $brief);
+        $formBrief->handleRequest($request);
+
+        if ($formBrief->isSubmitted() && $formBrief->isValid()) {
+            $entityManager = $this->getDoctrine()->getManager();
+            $entityManager->persist($brief);
+            $entityManager->flush();
+
+            $user = $formBrief->getData();
+            $url =  './uploads/images/products/' . $user->getDocument();
+            $mail = (new Email())
+                ->from($user->getEmail())
+                ->to('philippe.mariou@colombbus.org')
+                //->cc('cc@example.com')
+                //->bcc('bcc@example.com')
+                //->replyTo('fabien@example.com')
+                //->priority(Email::PRIORITY_HIGH)
+                ->subject('Nouveau brief')
+                ->text('Sender : '.$user->getEmail().\PHP_EOL.$user->getMessage(),'text/plain')
+                ->html('<p>See Twig integration for better HTML integration!</p>')
+                ->attachFromPath($url)
+                ;
+            $mailer->send($mail);
+            
+            $url = $this->generateUrl('index');
+            return new Response("
+            <html>
+                <body>
+                    <p>Le brief a bien été envoyé</p>  
+                    <a href=\"$url\">Retour</a>
                 </body>
             </html>
             ");
         }
 
         return $this->render('pages/formulaire_devis.html.twig', [
-            'form' => $form->createView(),
+            'form1' => $formDevis->createView(),
+            'form2' => $formBrief->createView(),
         ]);
     }
 }

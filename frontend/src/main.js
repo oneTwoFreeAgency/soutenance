@@ -43,8 +43,7 @@ import Talent from './page/Talent'
 import Agence from './page/Agence'
 import Mentions from './page/Mentions'
 import Accueil from './page/Accueil'
-import Backend from './page/Backend'
-
+import Modal from './components/Modal'
 
 
 const routes = [
@@ -54,10 +53,8 @@ const routes = [
   { path: '/agence', name: 'agence', component: Agence },
   { path: '/Mentions', name: 'Mentions', component: Mentions },
   { path: '/Accueil', name: 'Accueil', component: Accueil },
-  { path: '/Backend', name: 'Backend', component: Backend },
+  { path: '/Modal', name: 'Modal', component: Modal },
   { path: '/', redirect: { name: 'Accueil' }, component: Accueil }
-
-
 ]
 
 const router = new VueRouter({
