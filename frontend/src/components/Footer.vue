@@ -49,15 +49,11 @@
             >Mentions légales</a
           >
         </router-link>
-        <router-link to="/Backend" custom v-slot="{ href, navigate, isActive }">
-          <a
-            :active="isActive"
-            :href="href"
-            @click="navigate"
-            class="d-block text-right mt-3"
-            >Lien Backend</a
-          >
-        </router-link>
+        <a
+          href="http://localhost/soutenance/backend/public/index"
+          class="d-block text-right mt-3"
+          >Lien Backend</a
+        >
       </b-col>
     </b-row>
   </div>
