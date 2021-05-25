@@ -3,63 +3,9 @@
     <h1 class="text-center">{ Works }</h1>
     <b-row class="mb-5">
       <b-col class="clients">
-        <a href="#">
-          <img src="../assets/image/logo-simple.jpg" alt="logo du client" />
-        </a>
-        <p>test work</p>
-      </b-col>
-      <b-col class="clients">
-        <a href="#">
-          <img src="../assets/image/logo-simple.jpg" alt="logo du client" />
-        </a>
-        <p>test work</p>
-      </b-col>
-      <b-col class="clients">
-        <a href="#">
-          <img src="../assets/image/logo-simple.jpg" alt="logo du client" />
-        </a>
-        <p>test work</p>
-      </b-col>
-    </b-row>
-    <b-row class="mb-5">
-      <b-col class="clients">
-        <a href="#">
-          <img src="../assets/image/logo-simple.jpg" alt="logo du client" />
-        </a>
-        <p>test work</p>
-      </b-col>
-      <b-col class="clients">
-        <a href="#">
-          <img src="../assets/image/logo-simple.jpg" alt="logo du client" />
-        </a>
-        <p>test work</p>
-      </b-col>
-      <b-col class="clients">
-        <a href="#">
-          <img src="../assets/image/logo-simple.jpg" alt="logo du client" />
-        </a>
-        <p>test work</p>
-      </b-col>
-    </b-row>
-    <b-row>
-      <b-col class="clients">
-        <a href="#">
-          <img src="../assets/image/logo-simple.jpg" alt="logo du client" />
-        </a>
-        <p>test work</p>
-      </b-col>
-      <b-col class="clients">
-        <a href="#">
-          <img src="../assets/image/logo-simple.jpg" alt="logo du client" />
-        </a>
-        <p>test work</p>
-      </b-col>
-      <b-col class="clients">
-        <img src="../assets/image/logo-simple.jpg" alt="logo du client" />
         <button type="button" class="btn" @click="showModal">
-          Plus d'info
+          <img src="../assets/image/logo-simple.jpg" alt="logo du client" />
         </button>
-
         <Modal v-show="isModalVisible" @close="closeModal">
           <template v-slot:header>
             <h1>Le titre de ma page</h1>
@@ -71,7 +17,148 @@
             <p>Ici les infos de contact</p>
           </template>
         </Modal>
+        <p>test work</p>
+      </b-col>
+      <b-col class="clients">
+        <button type="button" class="btn" @click="showModal">
+          <img src="../assets/image/logo-simple.jpg" alt="logo du client" />
+        </button>
+        <Modal v-show="isModalVisible" @close="closeModal">
+          <template v-slot:header>
+            <h1>Le titre de ma page</h1>
+          </template>
+          <template v-slot:body>
+            <p>Ici les infos de contact</p>
+          </template>
+          <template v-slot:footer>
+            <p>Ici les infos de contact</p>
+          </template>
+        </Modal>
+        <p>test work</p>
+      </b-col>
+      <b-col class="clients">
+        <button type="button" class="btn" @click="showModal">
+          <img src="../assets/image/logo-simple.jpg" alt="logo du client" />
+        </button>
+        <Modal v-show="isModalVisible" @close="closeModal">
+          <template v-slot:header>
+            <h1>Le titre de ma page</h1>
+          </template>
+          <template v-slot:body>
+            <p>Ici les infos de contact</p>
+          </template>
+          <template v-slot:footer>
+            <p>Ici les infos de contact</p>
+          </template>
+        </Modal>
+        <p>test work</p>
+      </b-col>
+    </b-row>
 
+    <b-row class="mb-5">
+      <b-col class="clients">
+        <button type="button" class="btn" @click="showModal">
+          <img src="../assets/image/logo-simple.jpg" alt="logo du client" />
+        </button>
+        <Modal v-show="isModalVisible" @close="closeModal">
+          <template v-slot:header>
+            <h1>Le titre de ma page</h1>
+          </template>
+          <template v-slot:body>
+            <p>Ici les infos de contact</p>
+          </template>
+          <template v-slot:footer>
+            <p>Ici les infos de contact</p>
+          </template>
+        </Modal>
+        <p>test work</p>
+      </b-col>
+      <b-col class="clients">
+        <button type="button" class="btn" @click="showModal">
+          <img src="../assets/image/logo-simple.jpg" alt="logo du client" />
+        </button>
+        <Modal v-show="isModalVisible" @close="closeModal">
+          <template v-slot:header>
+            <h1>Le titre de ma page</h1>
+          </template>
+          <template v-slot:body>
+            <p>Ici les infos de contact</p>
+          </template>
+          <template v-slot:footer>
+            <p>Ici les infos de contact</p>
+          </template>
+        </Modal>
+        <p>test work</p>
+      </b-col>
+      <b-col class="clients">
+        <button type="button" class="btn" @click="showModal">
+          <img src="../assets/image/logo-simple.jpg" alt="logo du client" />
+        </button>
+        <Modal v-show="isModalVisible" @close="closeModal">
+          <template v-slot:header>
+            <h1>Le titre de ma page</h1>
+          </template>
+          <template v-slot:body>
+            <p>Ici les infos de contact</p>
+          </template>
+          <template v-slot:footer>
+            <p>Ici les infos de contact</p>
+          </template>
+        </Modal>
+        <p>test work</p>
+      </b-col>
+    </b-row>
+
+    <b-row class="mb-5">
+      <b-col class="clients">
+        <button type="button" class="btn" @click="showModal">
+          <img src="../assets/image/logo-simple.jpg" alt="logo du client" />
+        </button>
+        <Modal v-show="isModalVisible" @close="closeModal">
+          <template v-slot:header>
+            <h1>Le titre de ma page</h1>
+          </template>
+          <template v-slot:body>
+            <p>Ici les infos de contact</p>
+          </template>
+          <template v-slot:footer>
+            <p>Ici les infos de contact</p>
+          </template>
+        </Modal>
+        <p>test work</p>
+      </b-col>
+      <b-col class="clients">
+        <button type="button" class="btn" @click="showModal">
+          <img src="../assets/image/logo-simple.jpg" alt="logo du client" />
+        </button>
+        <Modal v-show="isModalVisible" @close="closeModal">
+          <template v-slot:header>
+            <h1>Le titre de ma page</h1>
+          </template>
+          <template v-slot:body>
+            <p>Ici les infos de contact</p>
+          </template>
+          <template v-slot:footer>
+            <p>Ici les infos de contact</p>
+          </template>
+        </Modal>
+        <p>test work</p>
+      </b-col>
+      <b-col class="clients">
+        <button type="button" class="btn" @click="showModal">
+          <img src="../assets/image/logo-simple.jpg" alt="logo du client" />
+        </button>
+        <Modal v-show="isModalVisible" @close="closeModal">
+          <template v-slot:header>
+            <h1>Le titre de ma page</h1>
+          </template>
+          <template v-slot:body>
+            <p>Ici les infos de contact</p>
+          </template>
+          <template v-slot:footer>
+            <p>Ici les infos de contact</p>
+          </template>
+        </Modal>
         <p>test work</p>
       </b-col>
     </b-row>

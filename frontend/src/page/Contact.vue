@@ -26,21 +26,65 @@
     <div>
       <h2>Contactez-nous</h2>
       <p>Par ici</p>
-      <img src="#" alt="illustration Contact" />
+      <button type="button" class="btn" @click="showModal">
+        <img src="#" alt="illustration Contact" />
+      </button>
+      <Modal v-show="isModalVisible" @close="closeModal">
+        <template v-slot:header>
+          <h1>Le titre de ma page</h1>
+        </template>
+        <template v-slot:body>
+          <p>Ici les infos de contact</p>
+        </template>
+        <template v-slot:footer>
+          <p>Ici les infos de contact</p>
+        </template>
+      </Modal>
     </div>
     <div>
       <h2>C'est vous le patron !</h2>
       <p>C'est quoi l'idée ?</p>
-      <img src="#" alt="illustration brief / devis" />
+      <button type="button" class="btn" @click="showModal">
+        <img src="#" alt="illustration brief / devis" />
+      </button>
+      <Modal v-show="isModalVisible" @close="closeModal">
+        <template v-slot:header>
+          <h1>Le titre de ma page</h1>
+        </template>
+        <template v-slot:body>
+          <p>Ici les infos de contact</p>
+        </template>
+        <template v-slot:footer>
+          <p>Ici les infos de contact</p>
+        </template>
+      </Modal>
     </div>
   </b-container>
 </template>
 
 <script>
+import Modal from "../components/Modal";
+
 export default {
   name: "HelloWorld",
   props: {
     msg: String,
+  },
+  components: {
+    Modal,
+  },
+  data() {
+    return {
+      isModalVisible: false,
+    };
+  },
+  methods: {
+    showModal() {
+      this.isModalVisible = true;
+    },
+    closeModal() {
+      this.isModalVisible = false;
+    },
   },
 };
 </script>
