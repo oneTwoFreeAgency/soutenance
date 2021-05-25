@@ -4,7 +4,7 @@
       <b-col cols="3">
         <img
           class="ml-2"
-          src="../assets/image/logofooter5.png"
+          src="../assets/image/logofooterblanc.png"
           alt="logo de l'agence"
           id="logo"
         />
