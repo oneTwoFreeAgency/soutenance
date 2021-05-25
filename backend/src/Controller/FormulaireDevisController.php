@@ -30,6 +30,11 @@ class FormulaireDevisController extends AbstractController
             $entityManager->flush();
 
             $user = $formDevis->getData();
+        /*     if($user->getDocument()) {
+                $url =  './uploads/images/products/' . $user->getDocument();
+            } else {
+                $url=null;
+            } */
             $url =  './uploads/images/products/' . $user->getDocument();
             $mail = (new Email())
                 ->from($user->getEmail())

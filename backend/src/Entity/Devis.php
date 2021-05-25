@@ -62,12 +62,13 @@ class Devis
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @var string|null
      */
     private $document;
 
     /**
      * @Vich\UploadableField(mapping="product_images", fileNameProperty="document")
-     * @var File
+     * @var File|null
      */
     private $file;
 
@@ -177,27 +178,27 @@ class Devis
         return $this->document;
     }
 
-    public function setDocument($document): self
+    public function setDocument(?string $document): void
     {
         $this->document = $document;
 
-        return $this;
+        // return $this;
     }
 
-    public function setFile(File $document = null)
+    public function setFile(?File $document = null): void
     {
         $this->file = $document;
 
         // VERY IMPORTANT:
         // It is required that at least one field changes if you are using Doctrine,
         // otherwise the event listeners won't be called and the file is lost
-        // if ($document) {
+        if (null !== $document) {
             // if 'updatedAt' is not defined in your entity, use another property
             // $this->updatedAt = new \DateTime('now');
-        // }
+        }
     }
 
-    public function getFile()
+    public function getFile(): ?File
     {
         return $this->file;
     }
