@@ -4,17 +4,29 @@
       <b-col cols="3">
         <img
           class="ml-2"
-          src="../assets/image/logofooter6.png"
+          src="../assets/image/logofooter5.png"
           alt="logo de l'agence"
           id="logo"
         />
       </b-col>
       <b-col cols="6" class="coordonnées">
-        <a href="tel:+33777524387">0777524387</a>
-        <a href="mailto:onetwofreeagency@gmail.com"
-          >onetwofreeagency@gmail.com</a
-        >
-        <p>10 rue du Terrage, 75010, Paris</p>
+        <div>
+          <img
+            src="../assets/image/telephoneicone.png"
+            alt="telephone agence"
+          />
+          <a href="tel:+33777524387">07.77.52.43.87</a>
+        </div>
+        <div>
+          <img src="../assets/image/arobase.png" alt="email agence" />
+          <a href="mailto:onetwofreeagency@gmail.com"
+            >onetwofreeagency@gmail.com</a
+          >
+        </div>
+        <div>
+          <img src="../assets/image/mapiconeblanc.png" alt="adresse agence" />
+          <span>10 rue du Terrage, 75010, Paris</span>
+        </div>
       </b-col>
       <b-col>
         <b-row> </b-row>
@@ -61,6 +73,10 @@ export default {
 </script>
 
 <style scoped>
+.coordonnées img {
+  width: 40px;
+  margin-right: 10px;
+}
 .footer {
   background-color: #308c99;
 }
