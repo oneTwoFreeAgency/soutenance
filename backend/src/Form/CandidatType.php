@@ -17,7 +17,6 @@ class CandidatType extends AbstractType
             ->add('prenom')
             ->add('email')
             ->add('message')
-            ->add('document')
             ->add('file', VichFileType::class, [
                 'required' => false,
                 'allow_delete' => true,
