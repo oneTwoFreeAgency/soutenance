@@ -62,7 +62,7 @@
           >
         </router-link>
         <a
-          href="http://localhost/soutenance/backend/public/index"
+          href="http://localhost/soutenance/backend/public/admin"
           class="d-block text-right mt-3"
           >Lien Backend</a
         >
