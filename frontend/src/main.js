@@ -43,7 +43,7 @@ import Talent from './page/Talent'
 import Agence from './page/Agence'
 import Mentions from './page/Mentions'
 import Accueil from './page/Accueil'
-
+import Backend from './page/Backend'
 
 
 
@@ -54,6 +54,8 @@ const routes = [
   { path: '/agence', name: 'agence', component: Agence },
   { path: '/Mentions', name: 'Mentions', component: Mentions },
   { path: '/Accueil', name: 'Accueil', component: Accueil },
+  { path: '/Backend', name: 'Backend', component: Backend },
+  { path: '/', redirect: { name: 'Accueil' }, component: Accueil }
 
 
 ]

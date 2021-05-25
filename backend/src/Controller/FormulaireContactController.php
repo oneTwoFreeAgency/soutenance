@@ -37,7 +37,10 @@ class FormulaireContactController extends AbstractController
                 //->priority(Email::PRIORITY_HIGH)
                 ->subject('Nouvelle demande de contact')
                 ->text('Sender : '.$user->getEmail().\PHP_EOL.$user->getMessage(),'text/plain')
-                ->html('<p>See Twig integration for better HTML integration!</p>');
+                ->html('<p>See Twig integration for better HTML integration!</p>')
+                // ->attachFromPath('/public/images/products/'.$user->getDocument())
+                // ->attach(fopen('/public/images/products/'.$user->getDocument(), 'r'))
+                ;
             $mailer->send($mail);
 
            
