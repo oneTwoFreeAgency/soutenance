@@ -61,8 +61,18 @@
         <p>test work</p>
       </b-col>
     </b-row>
+    <Modal></Modal>
   </b-container>
 </template>
+
+<script>
+import { Modal } from "../components/Modal.vue";
+
+export default {
+  components: Modal,
+};
+</script>
+
 
 <style scoped>
 img {
