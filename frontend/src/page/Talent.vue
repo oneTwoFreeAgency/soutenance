@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="talent">
     <h1 class="text-center">{ Talent }</h1>
     <h2>{ Concours créatif }</h2>
     <b-row>
@@ -14,7 +14,7 @@
             <p>Merlin l'enchanteur t'attend !</p>
             <span>3, 2, 1, lances-toi</span>
             <img
-              src="../assets/image/podium.jpg"
+              src="../assets/image/podium.png"
               alt="illustration concours créatif onetwofree agence"
             />
           </b-col>
@@ -33,7 +33,7 @@
         <h2>{ Rejoindre la team OTF }</h2>
         <p>Want to be Free ?</p>
         <img
-          src="../assets/image/Désx3.jpg"
+          src="../assets/image/3dés.png"
           alt="illustration talent onetwofree agence"
         />
       </b-col>
@@ -49,5 +49,8 @@
 <style scoped>
 img {
   width: 300px;
+}
+.talent {
+  background-color: #ffffff;
 }
 </style>
