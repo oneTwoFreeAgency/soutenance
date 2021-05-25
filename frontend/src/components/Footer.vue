@@ -64,7 +64,7 @@
         <a
           href="http://localhost/soutenance/backend/public/admin"
           class="d-block text-right mt-3"
-          >Lien Backend</a
+          >Zone Admin</a
         >
       </b-col>
     </b-row>
