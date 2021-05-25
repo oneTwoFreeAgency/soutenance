@@ -2,7 +2,7 @@
   <div>
     <b-navbar toggleable="" type="dark" variant="info">
       <b-navbar-brand href="#">
-        <img src="../assets/image/LogoOne.jpg" alt="Slogan de l'agence" />
+        <img src="../assets/image/logonavbar1.png" alt="Slogan de l'agence" />
       </b-navbar-brand>
       <img
         src="../assets/image/slogan.jpg"
