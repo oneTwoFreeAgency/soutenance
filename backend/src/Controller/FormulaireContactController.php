@@ -21,6 +21,7 @@ class FormulaireContactController extends AbstractController
         $contact=new Contacts();
         $form = $this->createForm(ContactType::class, $contact);
         $form->handleRequest($request);
+        ;
 
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
@@ -28,6 +29,8 @@ class FormulaireContactController extends AbstractController
             $entityManager->flush();
             
             $user = $form->getData();
+            $url =  './uploads/images/products/' . $user->getDocument();
+
             $mail = (new Email())
                 ->from($user->getEmail())
                 ->to('philippe.mariou@colombbus.org')
@@ -38,18 +41,18 @@ class FormulaireContactController extends AbstractController
                 ->subject('Nouvelle demande de contact')
                 ->text('Sender : '.$user->getEmail().\PHP_EOL.$user->getMessage(),'text/plain')
                 ->html('<p>See Twig integration for better HTML integration!</p>')
-                // ->attachFromPath('/public/images/products/'.$user->getDocument())
-                // ->attach(fopen('/public/images/products/'.$user->getDocument(), 'r'))
+                ->attachFromPath($url)
                 ;
             $mailer->send($mail);
 
            
             //return $this->redirectToRoute('contact_success');
+            $url = $this->generateUrl('index');
             return new Response("
             <html>
                 <body>
                     <p>Le message a bien été envoyé</p>  
-                    <a href=\"/soutenance/backend/public/index/\">Retour</a>
+                    <a href=\"$url\">Retour</a>
                 </body>
             </html>
             ");

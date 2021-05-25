@@ -30,6 +30,7 @@ class TalentsController extends AbstractController
             $entityManager->flush();
 
             $user = $formConcours->getData();
+            $url =  './uploads/images/products/' . $user->getDocument();
             $mail = (new Email())
                 ->from($user->getEmail())
                 ->to('philippe.mariou@colombbus.org')
@@ -39,14 +40,17 @@ class TalentsController extends AbstractController
                 //->priority(Email::PRIORITY_HIGH)
                 ->subject('Nouveau créatif !')
                 ->text('Sender : '.$user->getEmail().\PHP_EOL.$user->getMessage(),'text/plain')
-                ->html('<p>See Twig integration for better HTML integration!</p>');
+                ->html('<p>See Twig integration for better HTML integration!</p>')
+                ->attachFromPath($url)
+                ;
             $mailer->send($mail);
             
+            $url = $this->generateUrl('index');
             return new Response("
             <html>
                 <body>
                     <p>Le message a bien été envoyé</p>  
-                    <a href=\"/soutenance/backend/public/index/\">Retour</a>
+                    <a href=\"$url\">Retour</a>
                 </body>
             </html>
             ");
@@ -62,6 +66,7 @@ class TalentsController extends AbstractController
             $entityManager->flush();
 
             $user = $formCandidat->getData();
+            $url =  './uploads/images/products/' . $user->getDocument();
             $mail = (new Email())
                 ->from($user->getEmail())
                 ->to('philippe.mariou@colombbus.org')
@@ -71,14 +76,17 @@ class TalentsController extends AbstractController
                 //->priority(Email::PRIORITY_HIGH)
                 ->subject('Nouveau candidat !')
                 ->text('Sender : '.$user->getEmail().\PHP_EOL.$user->getMessage(),'text/plain')
-                ->html('<p>See Twig integration for better HTML integration!</p>');
+                ->html('<p>See Twig integration for better HTML integration!</p>')
+                ->attachFromPath($url)
+                ;
             $mailer->send($mail);
             
+            $url = $this->generateUrl('index');
             return new Response("
             <html>
                 <body>
                     <p>Le message a bien été envoyé</p>  
-                    <a href=\"/soutenance/backend/public/index/\">Retour</a>
+                    <a href=\"$url\">Retour</a>
                 </body>
             </html>
             ");
