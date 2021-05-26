@@ -3,7 +3,10 @@
     <div class="parallax mx-0"></div>
     <b-container>
       <section class="section p-5">
-        <h1 class="text-center">{ L'agence }</h1>
+        <h1 class="text-center text-white">
+          <span class="point">.</span><span class="accolade">{</span> L'agence
+          <span class="accolade"> }</span>
+        </h1>
         <b-row class="mt-5">
           <b-col class="text-center">
             <h3>Notre histoire</h3>
@@ -205,10 +208,17 @@
 .section {
   background-color: #ffffff;
 }
+h1,
 h3 {
   color: #308c99 !important;
 }
 .accroche {
   width: 250px;
+}
+.accolade {
+  color: #fbd100;
+}
+.point {
+  color: #308c99;
 }
 </style>
