@@ -180,7 +180,7 @@
 <style scoped>
 .parallax {
   /* The image used */
-  background-image: url("../assets/image/slideone1aerobic.png");
+  background-image: url("../assets/image/slideone-boysband.png");
   /* Set a specific height */
   min-height: 300px;
   /* Create the parallax scrolling effect */
@@ -191,7 +191,7 @@
 }
 .parallax2 {
   /* The image used */
-  background-image: url("../assets/image/Slideagence1.jpg");
+  background-image: url("../assets/image/slideonemousquetaire.png");
 
   /* Set a specific height */
   min-height: 300px;

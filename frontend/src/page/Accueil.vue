@@ -52,7 +52,7 @@
     <div class="text-center">
       <img
         class="welcome"
-        src="../assets/image/slideone1aerobic.png"
+        src="../assets/image/slideoneaerobic.png"
         alt="ordinateur bulles agence"
         data-aos="fade-up"
         data-aos-easing="linear"
