@@ -12,11 +12,6 @@
           />
         </router-link>
       </b-navbar-brand>
-      <img
-        src="../assets/image/slogan.jpg"
-        alt="Logo de l'agence"
-        class="slogan"
-      />
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="liens">
