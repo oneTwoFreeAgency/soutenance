@@ -13,18 +13,16 @@
       />
     </div> -->
 
-    <div>
-      <img
-        class="boutbulles slide"
-        src="../assets/image/bouteillebulles.png"
-        alt="bouteille bulles agence"
-        data-aos="fade-left"
-        data-aos-anchor="#example-anchor"
-        data-aos-offset="500"
-        data-aos-duration="4000"
-      />
-    </div>
-    <div>
+    <img
+      class="boutbulles slide"
+      src="../assets/image/bouteillebulles.png"
+      alt="bouteille bulles agence"
+      data-aos="fade-left"
+      data-aos-anchor="#example-anchor"
+      data-aos-offset="500"
+      data-aos-duration="4000"
+    />
+    <div class="d-flex flex-column hardware">
       <img
         class="mobilebulles slide"
         src="../assets/image/Champmobilebulles.png"
@@ -33,8 +31,6 @@
         data-aos-offset="300"
         data-aos-easing="ease-in-sine"
       />
-    </div>
-    <div>
       <img
         class="tablettebulles slide"
         src="../assets/image/Champtablettebulles.png"
@@ -42,8 +38,6 @@
         data-aos="fade-up"
         data-aos-duration="3000"
       />
-    </div>
-    <div>
       <img
         class="ordibulles slide"
         src="../assets/image/champordibulles.png"
@@ -53,6 +47,14 @@
         data-aos-duration="1500"
       />
     </div>
+    <img
+      class="welcome"
+      src="../assets/image/slideone1aerobic.png"
+      alt="ordinateur bulles agence"
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+    />
   </b-container>
 </template>
 
@@ -72,21 +74,31 @@ export default {
   /* width: 300px; */
   height: 75px;
 }
+.hardware {
+  width: 300px;
+}
 .boutbulles {
   /* width: 350px; */
   height: 150px;
 }
 .mobilebulles {
   /* width: 100px; */
-  height: 150px;
+  /* max-height: 100%; */
+  max-width: 50%;
+  /* height: 150px !important; */
 }
 .tablettebulles {
   /* width: 200px; */
-  height: 150px;
+  /* height: 150px !important; */
+  max-width: 50%;
 }
 .ordibulles {
-  /* width: 300px; */
-  height: 150px;
+  width: 300px;
+  /* height: 150px !important; */
+  /* max-width: 50%; */
+}
+.welcome {
+  width: 500px;
 }
 body,
 nav.navbar,
