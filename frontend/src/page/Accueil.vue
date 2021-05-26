@@ -81,10 +81,6 @@ export default {
   color: white;
 }
 
-.bouteillevide {
-  /* width: 300px; */
-  height: 75px;
-}
 .hardware {
   width: 300px;
 }
@@ -95,16 +91,16 @@ export default {
 .mobilebulles {
   /* width: 100px; */
   /* max-height: 100%; */
-  max-width: 50%;
+  max-width: 40%;
   /* height: 150px !important; */
 }
 .tablettebulles {
   /* width: 200px; */
   /* height: 150px !important; */
-  max-width: 50%;
+  max-width: 40%;
 }
 .ordibulles {
-  width: 300px;
+  width: 250px;
   /* height: 150px !important; */
   /* max-width: 50%; */
 }
