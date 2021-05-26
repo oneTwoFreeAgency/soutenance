@@ -4,7 +4,6 @@
       <span class="point">.</span><span class="accolade">{</span> Contact
       <span class="accolade"> }</span>
     </h1>
-
     <b-row>
       <b-col>
         <h3>Informations pratiques</h3>
@@ -18,7 +17,6 @@
           loading="lazy"
         ></iframe>
       </b-col>
-
       <b-col>
         <address class="adresse d-flex">
           <div>
@@ -47,15 +45,14 @@
         </address>
       </b-col>
     </b-row>
-
     <b-row>
       <b-col>
         <h2>Contactez-nous</h2>
         <p>Par ici</p>
-        <button type="button" class="btn" @click="showModal">
+        <button type="button" class="btn" @click="isModalVisible1 = true">
           <img src="#" alt="illustration Contact" />
         </button>
-        <Modal v-show="isModalVisible" @close="closeModal">
+        <Modal v-show="isModalVisible1" @close="isModalVisible1 = false">
           <template v-slot:header>
             <h1>Le titre de ma page</h1>
           </template>
@@ -70,10 +67,10 @@
       <b-col>
         <h2 class="text-white">Le patron c'est Vous !</h2>
         <p>C'est quoi l'idée ?</p>
-        <button type="button" class="btn" @click="showModal">
+        <button type="button" class="btn" @click="isModalVisible2 = true">
           <img src="#" alt="illustration brief / devis" />
         </button>
-        <Modal v-show="isModalVisible" @close="closeModal">
+        <Modal v-show="isModalVisible2" @close="isModalVisible2 = false">
           <template v-slot:header>
             <h1>Le titre de ma page</h1>
           </template>
@@ -102,7 +99,8 @@ export default {
   },
   data() {
     return {
-      isModalVisible: false,
+      isModalVisible1: false,
+      isModalVisible2: false,
     };
   },
   methods: {
