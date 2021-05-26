@@ -6,7 +6,7 @@
     </h1>
 
     <b-row>
-      <b-col>
+      <b-col class="text-white">
         <h3>Informations pratiques</h3>
         <p>Localisation de l'agence</p>
         <iframe
@@ -21,7 +21,7 @@
 
       <b-col>
         <address class="adresse d-flex">
-          <div>
+          <div class="mb-3">
             <img
               src="../assets/image/mapiconeBLANC1.png"
               alt="adresse de l'agence"
@@ -30,7 +30,7 @@
               >Adresse : 10 rue du Terrage, 75010 PARIS</span
             >
           </div>
-          <a class="text-white" href="tel:+33777524387">
+          <a class="text-white mb-3" href="tel:+33777524387">
             <img
               src="../assets/image/telephoneiconeblanc.png"
               alt="adresse de l'agence"
