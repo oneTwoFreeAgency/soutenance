@@ -1,7 +1,10 @@
 <template>
   <div class="talent">
     <div class="parallax mx-0"></div>
-    <h1 class="text-center">{ Talent }</h1>
+    <h1 class="text-center">
+      <span class="point">.</span><span class="accolade">{</span> Talent
+      <span class="accolade"> }</span>
+    </h1>
     <h2>{ Concours créatif }</h2>
     <b-row>
       <b-col>
@@ -71,11 +74,25 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-} */
+} 
+*/
+h1,
+h2 {
+  color: #308c99;
+}
+h3 {
+  color: #fbd100;
+}
 img {
   width: 300px;
 }
 .talent {
   background-color: #ffffff;
+}
+.accolade {
+  color: #fbd100;
+}
+.point {
+  color: #308c99;
 }
 </style>
