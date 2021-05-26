@@ -98,9 +98,9 @@ export default {
 <style scoped>
 .parallax {
   /* The image used */
-  background-image: url("../assets/image/slide-work.png");
+  background-image: url("../assets/image/slide-contact.png");
   /* Set a specific height */
-  min-height: 300px;
+  min-height: 400px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
