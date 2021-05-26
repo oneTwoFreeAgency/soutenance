@@ -118,7 +118,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-<<<<<<< HEAD
 .adresse {
   flex-direction: column;
 }
@@ -131,7 +130,6 @@ export default {
 .point {
   color: white;
 }
-=======
 .parallax {
   /* The image used */
   background-image: url("../assets/image/slide-contact.png");
@@ -156,5 +154,4 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
 } */
->>>>>>> 8e7c71964fe5f38040b9d401317b63e89dbfbb75
 </style>
