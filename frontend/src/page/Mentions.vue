@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <b-container>
     <h1 class="text-center">{ Mentions légales }</h1>
 
     <h2>Informations légales</h2>
@@ -263,7 +263,7 @@
       personnes physiques auxquelles elles s'appliquent » (article 4 de la loi
       n° 78-17 du 6 janvier 1978).
     </p>
-  </div>
+  </b-container>
 </template>
 
 <script>
