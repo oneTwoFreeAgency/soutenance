@@ -4,6 +4,7 @@ namespace App\Form;
 
 use App\Entity\Candidats;
 use Symfony\Component\Form\AbstractType;
+use Gregwar\CaptchaBundle\Type\CaptchaType;
 use Vich\UploaderBundle\Form\Type\VichFileType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -25,6 +26,7 @@ class CandidatType extends AbstractType
                 'download_label' => '...',
                 'asset_helper' => true,
             ])
+            ->add('captcha', CaptchaType::class);
         ;
     }
 

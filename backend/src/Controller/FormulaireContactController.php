@@ -29,7 +29,7 @@ class FormulaireContactController extends AbstractController
             $entityManager->flush();
             
             $user = $form->getData();
-            $url =  './uploads/images/products/' . $user->getDocument();
+            $url =  './uploads/' . $user->getDocument();
 
             $mail = (new Email())
                 ->from($user->getEmail())
@@ -40,8 +40,11 @@ class FormulaireContactController extends AbstractController
                 //->priority(Email::PRIORITY_HIGH)
                 ->subject('Nouvelle demande de contact')
                 ->text('Sender : '.$user->getEmail().\PHP_EOL.$user->getMessage(),'text/plain')
-                ->html('<p>See Twig integration for better HTML integration!</p>')
-                ->attachFromPath($url)
+                ->html('<p>See Twig integration for better HTML integration!</p>');
+                if ( $user->getDocument()) {
+                    $mail
+                        ->attachFromPath($url);
+                }
                 ;
             $mailer->send($mail);
 

@@ -66,9 +66,15 @@
             <p>Ici les infos de contact</p>
           </template>
         </Modal>
+<<<<<<< HEAD
       </b-col>
       <b-col>
         <h2 class="text-white">Le patron c'est Vous !</h2>
+=======
+      </div>
+      <div>
+        <h2>Le patron c'est Vous !</h2>
+>>>>>>> 8e7c71964fe5f38040b9d401317b63e89dbfbb75
         <p>C'est quoi l'idée ?</p>
         <button type="button" class="btn" @click="showModal">
           <img src="#" alt="illustration brief / devis" />
@@ -84,8 +90,13 @@
             <p>Ici les infos de contact</p>
           </template>
         </Modal>
+<<<<<<< HEAD
       </b-col>
     </b-row>
+=======
+      </div>
+    </b-container>
+>>>>>>> 8e7c71964fe5f38040b9d401317b63e89dbfbb75
   </b-container>
 </template>
 
@@ -118,6 +129,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+<<<<<<< HEAD
 .adresse {
   flex-direction: column;
 }
@@ -130,4 +142,30 @@ export default {
 .point {
   color: white;
 }
+=======
+.parallax {
+  /* The image used */
+  background-image: url("../assets/image/slide-work.png");
+  /* Set a specific height */
+  min-height: 300px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* .parallax2 {
+   The image used 
+  background-image: url("../assets/image/Slideagence1.jpg");
+
+   Set a specific height 
+  min-height: 300px;
+
+   Create the parallax scrolling effect 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+>>>>>>> 8e7c71964fe5f38040b9d401317b63e89dbfbb75
 </style>

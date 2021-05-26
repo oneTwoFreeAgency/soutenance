@@ -7,8 +7,7 @@
 {% form_theme form2 'bootstrap_4_layout.html.twig' %}
 
 {% block body %}
-	<h1>{Talents}</h1>
-
+<div class="container">
 	<h2>{Devis}</h2>
 	{{ form_start(form1) }}
 	{{ form_widget(form1) }}
@@ -22,4 +21,5 @@
 	<button class="btn">{{ button_label|default('Envoyer') }}</button>
 	{{ form_rest(form2) }}
 	{{ form_end(form2) }}
+</div>	
 {% endblock %}

@@ -6,6 +6,7 @@
 {% form_theme form2 'bootstrap_4_layout.html.twig' %}
 
 {% block body %}
+<div class="container">
 	<h1>{Talents}</h1>
 	
 	<h2>{Concours créatif}</h2>
@@ -21,4 +22,5 @@
 	<button class="btn">{{ button_label|default('Envoyer') }}</button>
 	{{ form_rest(form2) }}
 	{{ form_end(form2) }}
+</div>
 {% endblock %}

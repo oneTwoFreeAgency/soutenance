@@ -16,7 +16,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class FormulaireDevisController extends AbstractController
 {
     /**
-     * @Route("/formulaire/devis", name="devis", methods={"GET","POST"})
+     * @Route("/formulaire/devis", name="devis")
      */
     public function index(Request $request, MailerInterface $mailer): Response
     {
@@ -30,12 +30,7 @@ class FormulaireDevisController extends AbstractController
             $entityManager->flush();
 
             $user = $formDevis->getData();
-        /*     if($user->getDocument()) {
-                $url =  './uploads/images/products/' . $user->getDocument();
-            } else {
-                $url=null;
-            } */
-            $url =  './uploads/images/products/' . $user->getDocument();
+            $url =  './uploads/' . $user->getDocument();
             $mail = (new Email())
                 ->from($user->getEmail())
                 ->to('philippe.mariou@colombbus.org')
@@ -46,7 +41,11 @@ class FormulaireDevisController extends AbstractController
                 ->subject('Nouvelle demande de devis')
                 ->text('Sender : '.$user->getEmail().\PHP_EOL.$user->getMessage(),'text/plain')
                 ->html('<p>See Twig integration for better HTML integration!</p>')
-                ->attachFromPath($url)
+                ;
+                if ( $user->getDocument()) {
+                    $mail
+                        ->attachFromPath($url);
+                }
                 ;
             $mailer->send($mail);
             
@@ -71,7 +70,7 @@ class FormulaireDevisController extends AbstractController
             $entityManager->flush();
 
             $user = $formBrief->getData();
-            $url =  './uploads/images/products/' . $user->getDocument();
+            $url =  './uploads/' . $user->getDocument();
             $mail = (new Email())
                 ->from($user->getEmail())
                 ->to('philippe.mariou@colombbus.org')
@@ -81,8 +80,11 @@ class FormulaireDevisController extends AbstractController
                 //->priority(Email::PRIORITY_HIGH)
                 ->subject('Nouveau brief')
                 ->text('Sender : '.$user->getEmail().\PHP_EOL.$user->getMessage(),'text/plain')
-                ->html('<p>See Twig integration for better HTML integration!</p>')
-                ->attachFromPath($url)
+                ->html('<p>See Twig integration for better HTML integration!</p>');
+                if ( $user->getDocument()) {
+                    $mail
+                        ->attachFromPath($url);
+                }
                 ;
             $mailer->send($mail);
             
