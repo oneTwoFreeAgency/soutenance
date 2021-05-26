@@ -2,7 +2,15 @@
   <div>
     <b-navbar toggleable="" type="dark" variant="info">
       <b-navbar-brand href="#">
-        <img src="../assets/image/logonavbar1.png" alt="Slogan de l'agence" />
+        <router-link to="/accueil" custom v-slot="{ href, navigate, isActive }">
+          <img
+            src="../assets/image/logonavbar1.png"
+            alt="Slogan de l'agence"
+            :active="isActive"
+            :href="href"
+            @click="navigate"
+          />
+        </router-link>
       </b-navbar-brand>
       <img
         src="../assets/image/slogan.jpg"
@@ -12,6 +20,15 @@
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="liens">
+          <router-link
+            to="/Accueil"
+            custom
+            v-slot="{ href, navigate, isActive }"
+          >
+            <b-nav-item :active="isActive" :href="href" @click="navigate"
+              >Accueil</b-nav-item
+            >
+          </router-link>
           <router-link
             to="/agence"
             custom
@@ -54,15 +71,6 @@
           >
             <b-nav-item :active="isActive" :href="href" @click="navigate"
               >Mentions</b-nav-item
-            >
-          </router-link>
-          <router-link
-            to="/Accueil"
-            custom
-            v-slot="{ href, navigate, isActive }"
-          >
-            <b-nav-item :active="isActive" :href="href" @click="navigate"
-              >Accueil</b-nav-item
             >
           </router-link>
         </b-navbar-nav>
