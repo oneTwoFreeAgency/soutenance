@@ -1,5 +1,6 @@
 <template>
   <div class="talent">
+    <div class="parallax mx-0"></div>
     <h1 class="text-center">{ Talent }</h1>
     <h2>{ Concours créatif }</h2>
     <b-row>
@@ -47,6 +48,30 @@
 </template>
 
 <style scoped>
+.parallax {
+  /* The image used */
+  background-image: url("../assets/image/slide-mousquetaires.png");
+  /* Set a specific height */
+  min-height: 300px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* .parallax2 {
+   The image used 
+  background-image: url("../assets/image/Slideagence1.jpg");
+
+   Set a specific height 
+  min-height: 300px;
+
+   Create the parallax scrolling effect 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
 img {
   width: 300px;
 }
