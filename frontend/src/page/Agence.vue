@@ -5,15 +5,18 @@
       <section class="section p-5">
         <h1 class="text-center">{ L'agence }</h1>
         <b-row class="mt-5">
-          <b-col>
+          <b-col class="text-center">
             <h3>Notre histoire</h3>
             <p>
               L’idée de créer une agence web est venue autour d’une table en
               septembre 2020, nous étions deux avec juste cette idée. Lorsque
               l’idée est revenue sur la table 6 mois plus tard, nous étions
               trois, avec toujours la même idée et juste un nom à lui donner:
-              One Two Free. Le mot Free à la place de Three, parce que nous
-              étions trois indépendants avec déjà l’envie d’être plus.
+              One Two Free.
+            </p>
+            <p>
+              Le mot Free à la place de Three, parce que nous étions trois
+              indépendants avec déjà l’envie d’être plus.
             </p>
             <p>
               Aujourd’hui nous sommes quatre autour de la table de One Two Free
@@ -23,14 +26,12 @@
             </p>
           </b-col>
           <b-col>
-            <h3>Notre concept</h3>
-            <p>Chez .oneTwoFree{} nous pensons définitivement que :</p>
-            <span
-              >rien n’est plus fort qu’une idée, quand on a qu’une idée.</span
-            >
-            <p></p>
-            <img src="#" alt="illustration agence" />
-            <img src="#" alt="illustration agence" />
+            <h3 class="text-center">Notre concept</h3>
+            <img
+              class="accroche d-block mx-auto mt-4"
+              src="../assets/image/accrocheID.png"
+              alt="concept de l'agence"
+            />
           </b-col>
         </b-row>
       </section>
@@ -203,5 +204,11 @@
 }
 .section {
   background-color: #ffffff;
+}
+h3 {
+  color: #308c99 !important;
+}
+.accroche {
+  width: 250px;
 }
 </style>
