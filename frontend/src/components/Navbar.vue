@@ -4,7 +4,7 @@
       <b-navbar-brand href="#">
         <router-link to="/accueil" custom v-slot="{ href, navigate, isActive }">
           <img
-            src="../assets/image/logonavbartransparent.png"
+            src="../assets/image/logonavbartransparent1.png"
             alt="Slogan de l'agence"
             :active="isActive"
             :href="href"
