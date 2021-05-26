@@ -62,7 +62,6 @@ class Devis
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
-     * @var string|null
      */
     private $document;
 
@@ -185,20 +184,20 @@ class Devis
         // return $this;
     }
 
-    public function setFile(?File $document = null): void
+    public function setFile(File $document = null)
     {
         $this->file = $document;
 
         // VERY IMPORTANT:
         // It is required that at least one field changes if you are using Doctrine,
         // otherwise the event listeners won't be called and the file is lost
-        if (null !== $document) {
+        // if ($document) {
             // if 'updatedAt' is not defined in your entity, use another property
             // $this->updatedAt = new \DateTime('now');
-        }
+        // }
     }
 
-    public function getFile(): ?File
+    public function getFile()
     {
         return $this->file;
     }

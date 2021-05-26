@@ -30,7 +30,7 @@ class TalentsController extends AbstractController
             $entityManager->flush();
 
             $user = $formConcours->getData();
-            $url =  './uploads/images/products/' . $user->getDocument();
+            $url =  './uploads/' . $user->getDocument();
             $mail = (new Email())
                 ->from($user->getEmail())
                 ->to('philippe.mariou@colombbus.org')
@@ -40,8 +40,11 @@ class TalentsController extends AbstractController
                 //->priority(Email::PRIORITY_HIGH)
                 ->subject('Nouveau créatif !')
                 ->text('Sender : '.$user->getEmail().\PHP_EOL.$user->getMessage(),'text/plain')
-                ->html('<p>See Twig integration for better HTML integration!</p>')
-                ->attachFromPath($url)
+                ->html('<p>See Twig integration for better HTML integration!</p>');
+                if ( $user->getDocument()) {
+                    $mail
+                        ->attachFromPath($url);
+                }
                 ;
             $mailer->send($mail);
             
@@ -66,7 +69,7 @@ class TalentsController extends AbstractController
             $entityManager->flush();
 
             $user = $formCandidat->getData();
-            $url =  './uploads/images/products/' . $user->getDocument();
+            $url =  './uploads/' . $user->getDocument();
             $mail = (new Email())
                 ->from($user->getEmail())
                 ->to('philippe.mariou@colombbus.org')
@@ -76,8 +79,11 @@ class TalentsController extends AbstractController
                 //->priority(Email::PRIORITY_HIGH)
                 ->subject('Nouveau candidat !')
                 ->text('Sender : '.$user->getEmail().\PHP_EOL.$user->getMessage(),'text/plain')
-                ->html('<p>See Twig integration for better HTML integration!</p>')
-                ->attachFromPath($url)
+                ->html('<p>See Twig integration for better HTML integration!</p>');
+                if ( $user->getDocument()) {
+                    $mail
+                        ->attachFromPath($url);
+                }
                 ;
             $mailer->send($mail);
             
