@@ -1,6 +1,9 @@
 <template>
   <b-container>
-    <h1 class="text-center">{ Contact }</h1>
+    <h1 class="text-center text-white">
+      <span class="point">.</span><span class="accolade">{</span> Contact
+      <span class="accolade"> }</span>
+    </h1>
 
     <b-row>
       <b-col>
@@ -65,7 +68,7 @@
         </Modal>
       </b-col>
       <b-col>
-        <h2>Le patron c'est Vous !</h2>
+        <h2 class="text-white">Le patron c'est Vous !</h2>
         <p>C'est quoi l'idée ?</p>
         <button type="button" class="btn" @click="showModal">
           <img src="#" alt="illustration brief / devis" />
@@ -120,5 +123,11 @@ export default {
 }
 .adresse img {
   width: 40px;
+}
+.accolade {
+  color: #fbd100;
+}
+.point {
+  color: white;
 }
 </style>
