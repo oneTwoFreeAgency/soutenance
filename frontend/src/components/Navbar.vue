@@ -4,6 +4,7 @@
       <b-navbar-brand href="#">
         <router-link to="/accueil" custom v-slot="{ href, navigate, isActive }">
           <img
+            class="logo"
             src="../assets/image/logonavbartransparent1.png"
             alt="Slogan de l'agence"
             :active="isActive"
@@ -87,11 +88,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-img {
-  width: 270px;
-}
-.slogan {
-  width: 390px;
+.logo {
+  width: 900px;
 }
 .liens {
   display: flex;
