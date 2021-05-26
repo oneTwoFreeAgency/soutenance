@@ -1,60 +1,64 @@
 <template id="marker2">
   <b-container fluid style="background-color: #308c99">
+    <h1 class="text-center text-white">
+      <span class="point">.</span><span class="accolade">{</span> Bienvenue
+      <span class="accolade"> }</span>
+    </h1>
     <h3>Nous</h3>
 
-    <!-- <div>
+    <div class="text-center">
       <img
-        class="bouteillevide slide"
-        src="../assets/image/bouteillevide.png"
-        alt="bouteille vide agence"
-        data-aos="fade-down"
-        data-aos-easing="linear"
-        data-aos-duration="1500"
+        class="boutbulles slide"
+        src="../assets/image/bouteillebulles.png"
+        alt="bouteille bulles agence"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="3000"
       />
-    </div> -->
+    </div>
 
-    <img
-      class="boutbulles slide"
-      src="../assets/image/bouteillebulles.png"
-      alt="bouteille bulles agence"
-      data-aos="fade-left"
-      data-aos-anchor="#example-anchor"
-      data-aos-offset="500"
-      data-aos-duration="4000"
-    />
-    <div class="d-flex flex-column hardware">
+    <div class="text-center">
       <img
         class="mobilebulles slide"
         src="../assets/image/Champmobilebulles.png"
         alt="mobile bulles agence"
         data-aos="fade-right"
-        data-aos-offset="300"
+        data-aos-offset="450"
         data-aos-easing="ease-in-sine"
       />
+    </div>
+
+    <div class="text-center">
       <img
         class="tablettebulles slide"
         src="../assets/image/Champtablettebulles.png"
         alt="tablette bulles agence"
-        data-aos="fade-up"
+        data-aos="fade-left"
         data-aos-duration="3000"
       />
+    </div>
+
+    <div class="text-center">
       <img
         class="ordibulles slide"
         src="../assets/image/champordibulles.png"
         alt="ordinateur bulles agence"
-        data-aos="fade-down"
+        data-aos="fade-right"
         data-aos-easing="linear"
         data-aos-duration="1500"
       />
     </div>
-    <img
-      class="welcome"
-      src="../assets/image/slideone1aerobic.png"
-      alt="ordinateur bulles agence"
-      data-aos="fade-down"
-      data-aos-easing="linear"
-      data-aos-duration="1500"
-    />
+
+    <div class="text-center">
+      <img
+        class="welcome"
+        src="../assets/image/slideone1aerobic.png"
+        alt="ordinateur bulles agence"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      />
+    </div>
   </b-container>
 </template>
 
@@ -70,6 +74,13 @@ export default {
 </script>
 
 <style >
+.accolade {
+  color: #fbd100;
+}
+.point {
+  color: white;
+}
+
 .bouteillevide {
   /* width: 300px; */
   height: 75px;
