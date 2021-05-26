@@ -7,24 +7,30 @@
         <b-row class="mb-5">
           <b-col class="clients" data-aos="fade-left" aos-init aos-animate>
             <button type="button" class="btn" @click="showModal">
-              <img src="../assets/image/logo-simple.jpg" alt="logo du client" />
+              <img
+                src="../assets/image/presentationlesouvenir2.png"
+                alt="photo production pour client"
+              />
             </button>
             <Modal v-show="isModalVisible" @close="closeModal">
               <template v-slot:header>
                 <h1>Le titre de ma page</h1>
               </template>
               <template v-slot:body>
-                <p>Ici les infos de contact</p>
+                <p>Refonte site, Création Charte graphique</p>
               </template>
               <template v-slot:footer>
                 <p>Ici les infos de contact</p>
               </template>
             </Modal>
-            <p>test work</p>
+            <p>Identité visuelle</p>
           </b-col>
           <b-col class="clients" data-aos="fade-right" aos-init aos-animate>
             <button type="button" class="btn" @click="showModal">
-              <img src="../assets/image/logo-simple.jpg" alt="logo du client" />
+              <img
+                src="../assets/image/presse1.jpg"
+                alt="photo production pour client"
+              />
             </button>
             <Modal v-show="isModalVisible" @close="closeModal">
               <template v-slot:header>
@@ -37,43 +43,49 @@
                 <p>Ici les infos de contact</p>
               </template>
             </Modal>
-            <p>test work</p>
+            <p>Presse Ecrite</p>
           </b-col>
         </b-row>
         <b-row>
           <b-col class="clients" data-aos="fade-right" aos-init aos-animate>
             <button type="button" class="btn" @click="showModal">
-              <img src="../assets/image/logo-simple.jpg" alt="logo du client" />
+              <img
+                src="../assets/image/abbepierre.png"
+                alt="photo production pour client"
+              />
             </button>
             <Modal v-show="isModalVisible" @close="closeModal">
               <template v-slot:header>
                 <h1>Le titre de ma page</h1>
               </template>
               <template v-slot:body>
-                <p>Ici les infos de contact</p>
+                <p>Création supports visuels</p>
               </template>
               <template v-slot:footer>
                 <p>Ici les infos de contact</p>
               </template>
             </Modal>
-            <p>test work</p>
+            <p>Affichage</p>
           </b-col>
           <b-col class="clients" data-aos="fade-left" aos-init aos-animate>
             <button type="button" class="btn" @click="showModal">
-              <img src="../assets/image/logo-simple.jpg" alt="logo du client" />
+              <img
+                src="../assets/image/presse2.jpg"
+                alt="photo production pour le client"
+              />
             </button>
             <Modal v-show="isModalVisible" @close="closeModal">
               <template v-slot:header>
                 <h1>Le titre de ma page</h1>
               </template>
               <template v-slot:body>
-                <p>Ici les infos de contact</p>
+                <p>Création contenus pour la radio</p>
               </template>
               <template v-slot:footer>
                 <p>Ici les infos de contact</p>
               </template>
             </Modal>
-            <p>test work</p>
+            <p>Presse Radio</p>
           </b-col>
         </b-row>
       </section>
@@ -82,7 +94,10 @@
         <b-row class="mb-5">
           <b-col class="clients" data-aos="fade-right" aos-init aos-animate>
             <button type="button" class="btn" @click="showModal">
-              <img src="../assets/image/logo-simple.jpg" alt="logo du client" />
+              <img
+                src="../assets/image/baio.png"
+                alt="photo production pour client"
+              />
             </button>
             <Modal v-show="isModalVisible" @close="closeModal">
               <template v-slot:header>
@@ -95,30 +110,38 @@
                 <p>Ici les infos de contact</p>
               </template>
             </Modal>
-            <p>test work</p>
+            <p>Création site</p>
           </b-col>
           <b-col class="clients" data-aos="fade-left" aos-init aos-animate>
             <button type="button" class="btn" @click="showModal">
-              <img src="../assets/image/logo-simple.jpg" alt="logo du client" />
+              <img
+                src="../assets/image/win.png"
+                alt="photo production pour client"
+              />
             </button>
             <Modal v-show="isModalVisible" @close="closeModal">
               <template v-slot:header>
                 <h1>Le titre de ma page</h1>
               </template>
               <template v-slot:body>
-                <p>Ici les infos de contact</p>
+                <p>
+                  Refonte identité visuelle, SEO, gestion des réseaux sociaux
+                </p>
               </template>
               <template v-slot:footer>
                 <p>Ici les infos de contact</p>
               </template>
             </Modal>
-            <p>test work</p>
+            <p>Community management</p>
           </b-col>
         </b-row>
         <b-row>
           <b-col class="clients" data-aos="fade-left" aos-init aos-animate>
             <button type="button" class="btn" @click="showModal">
-              <img src="../assets/image/logo-simple.jpg" alt="logo du client" />
+              <img
+                src="../assets/image/colombbus.png"
+                alt="photo production pour client"
+              />
             </button>
             <Modal v-show="isModalVisible" @close="closeModal">
               <template v-slot:header>
@@ -131,11 +154,14 @@
                 <p>Ici les infos de contact</p>
               </template>
             </Modal>
-            <p>test work</p>
+            <p>Recommandation stratégique</p>
           </b-col>
           <b-col class="clients" data-aos="fade-right" aos-init aos-animate>
             <button type="button" class="btn" @click="showModal">
-              <img src="../assets/image/logo-simple.jpg" alt="logo du client" />
+              <img
+                src="../assets/image/momobilier.jpg"
+                alt="photo production pour le client"
+              />
             </button>
             <Modal v-show="isModalVisible" @close="closeModal">
               <template v-slot:header>
@@ -148,7 +174,7 @@
                 <p>Ici les infos de contact</p>
               </template>
             </Modal>
-            <p>test work</p>
+            <p>Refonte site</p>
           </b-col>
         </b-row>
       </section>
