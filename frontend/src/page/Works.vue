@@ -3,7 +3,11 @@
     <div class="parallax mx-0"></div>
     <b-container>
       <section class="p-3 mb-2">
-        <h1 class="text-center mb-4">{ 2,3 de nos réalisations }</h1>
+        <h1 class="text-center titre">
+          <span class="point">.</span><span class="accolade">{</span> L'agence
+          <span class="accolade"> }</span>
+        </h1>
+        <h2 class="text-center mb-4">{ 2,3 de nos réalisations }</h2>
         <b-row class="mb-5">
           <b-col class="clients" data-aos="fade-left" aos-init aos-animate>
             <button type="button" class="btn" @click="showModal">
@@ -266,5 +270,17 @@ p {
   display: block;
   margin: 0 auto;
   text-align: center;
+}
+h2 {
+  color: #308c99;
+}
+.accolade {
+  color: #fbd100;
+}
+.point {
+  color: #308c99;
+}
+.titre {
+  color: #308c99;
 }
 </style>
