@@ -47,12 +47,16 @@
           </address>
         </b-col>
       </b-row>
-      <b-row>
-        <b-col>
+      <b-row class="mt-5">
+        <b-col class="text-white">
           <h2>Contactez-nous</h2>
-          <p>Par ici</p>
+          <p class="text-center">Par ici</p>
           <button type="button" class="btn" @click="isModalVisible1 = true">
-            <img src="#" alt="illustration Contact" />
+            <img
+              class="form2"
+              src="../assets/image/logofooter4.png"
+              alt="illustration Contact"
+            />
           </button>
           <Modal v-show="isModalVisible1" @close="isModalVisible1 = false">
             <template v-slot:header>
@@ -66,11 +70,15 @@
             </template>
           </Modal>
         </b-col>
-        <b-col>
-          <h2 class="text-white">Le patron c'est Vous !</h2>
-          <p>C'est quoi l'idée ?</p>
+        <b-col class="text-white">
+          <h2>Le patron c'est Vous !</h2>
+          <p class="text-center">C'est quoi l'idée ?</p>
           <button type="button" class="btn" @click="isModalVisible2 = true">
-            <img src="#" alt="illustration brief / devis" />
+            <img
+              class="form2"
+              src="../assets/image/calcul.jpg"
+              alt="illustration brief / devis"
+            />
           </button>
           <Modal v-show="isModalVisible2" @close="isModalVisible2 = false">
             <template v-slot:header>
@@ -119,7 +127,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.col-adresse {
+.form2 {
+  width: 250px;
+}
+img .col-adresse {
   margin-top: 250px;
 }
 .adresse {
