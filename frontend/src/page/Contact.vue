@@ -37,7 +37,7 @@
               />
               Téléphone : 07.77.52.43.87</a
             >
-            <a class="text-white" href="mailto:ag.one.two.free@gmail.com">
+            <a class="text-white" href="mailto:onetwofreeagency@gmail.com">
               <img
                 src="../assets/image/arobaseblanc.png"
                 alt="adresse de l'agence"
