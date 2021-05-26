@@ -1,12 +1,13 @@
 <template>
-  <b-container fluid>
-    <div class="parallax mx-0"></div>
-    <b-container>
-      <h1 class="text-center">{ Contact }</h1>
+  <b-container>
+    <h1 class="text-center text-white">
+      <span class="point">.</span><span class="accolade">{</span> Contact
+      <span class="accolade"> }</span>
+    </h1>
 
-      <h3>Informations pratiques</h3>
-
-      <div>
+    <b-row>
+      <b-col>
+        <h3>Informations pratiques</h3>
         <p>Localisation de l'agence</p>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.002547647792!2d2.361373515675051!3d48.87722797928935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e74a2784d1d%3A0x24dd226ba319689b!2s10%20Rue%20du%20Terrage%2C%2075010%20Paris!5e0!3m2!1sfr!2sfr!4v1621517373084!5m2!1sfr!2sfr"
@@ -16,18 +17,39 @@
           allowfullscreen=""
           loading="lazy"
         ></iframe>
-      </div>
+      </b-col>
 
-      <address>
-        <p class="text-white">Adresse : 10 rue du Terrage, 75010 PARIS</p>
-        <a class="text-white" href="tel:+33777524387"
-          >Téléphone : 07.77.52.43.87</a
-        >
-        <a class="text-white" href="mailto:ag.one.two.free@gmail.com"
-          >Email :ag.one.two.free@gmail.com</a
-        >
-      </address>
-      <div>
+      <b-col>
+        <address class="adresse d-flex">
+          <div>
+            <img
+              src="../assets/image/mapiconeBLANC1.png"
+              alt="adresse de l'agence"
+            />
+            <span class="text-white"
+              >Adresse : 10 rue du Terrage, 75010 PARIS</span
+            >
+          </div>
+          <a class="text-white" href="tel:+33777524387">
+            <img
+              src="../assets/image/telephoneiconeblanc.png"
+              alt="adresse de l'agence"
+            />
+            Téléphone : 07.77.52.43.87</a
+          >
+          <a class="text-white" href="mailto:ag.one.two.free@gmail.com">
+            <img
+              src="../assets/image/arobaseblanc.png"
+              alt="adresse de l'agence"
+            />
+            Email : onetwofreeagency@gmail.com</a
+          >
+        </address>
+      </b-col>
+    </b-row>
+
+    <b-row>
+      <b-col>
         <h2>Contactez-nous</h2>
         <p>Par ici</p>
         <button type="button" class="btn" @click="showModal">
@@ -44,9 +66,9 @@
             <p>Ici les infos de contact</p>
           </template>
         </Modal>
-      </div>
-      <div>
-        <h2>Le patron c'est Vous !</h2>
+      </b-col>
+      <b-col>
+        <h2 class="text-white">Le patron c'est Vous !</h2>
         <p>C'est quoi l'idée ?</p>
         <button type="button" class="btn" @click="showModal">
           <img src="#" alt="illustration brief / devis" />
@@ -62,8 +84,8 @@
             <p>Ici les infos de contact</p>
           </template>
         </Modal>
-      </div>
-    </b-container>
+      </b-col>
+    </b-row>
   </b-container>
 </template>
 
@@ -96,6 +118,20 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+<<<<<<< HEAD
+.adresse {
+  flex-direction: column;
+}
+.adresse img {
+  width: 40px;
+}
+.accolade {
+  color: #fbd100;
+}
+.point {
+  color: white;
+}
+=======
 .parallax {
   /* The image used */
   background-image: url("../assets/image/slide-contact.png");
@@ -120,4 +156,5 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
 } */
+>>>>>>> 8e7c71964fe5f38040b9d401317b63e89dbfbb75
 </style>

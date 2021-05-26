@@ -1,5 +1,5 @@
 <template>
-  <div class="footer mt-4 py-4">
+  <div class="footer mt-2 py-2">
     <b-row align-h="between">
       <b-col cols="3">
         <img
@@ -9,7 +9,7 @@
           id="logo"
         />
       </b-col>
-      <b-col cols="6" class="coordonnées">
+      <b-col cols="6" class="coordonnées mt-4">
         <div class="mb-2">
           <img
             src="../assets/image/telephoneiconeblanc.png"
@@ -25,18 +25,17 @@
         </div>
         <div>
           <img src="../assets/image/mapiconeBLANC1.png" alt="adresse agence" />
-          <span class="text-white">10 rue du Terrage, 75010, Paris</span>
+          <span class="text-white">10 rue du Terrage, 75010 PARIS</span>
         </div>
       </b-col>
-      <b-col>
-        <b-row> </b-row>
+      <b-col class="mt-4">
         <div class="reseaux text-right">
           <a
             class="text-white"
             href="https://twitter.com/OneTwoFree20"
             target="_blank"
           >
-            <font-awesome-icon :icon="['fab', 'twitter']" size="3x" />
+            <font-awesome-icon :icon="['fab', 'twitter']" size="2x" />
 
             <font-awesome-icon icon="twitter"></font-awesome-icon>
           </a>
@@ -45,13 +44,13 @@
             href="https://www.instagram.com/onetwofreeteam/"
             target="_blank"
           >
-            <font-awesome-icon :icon="['fab', 'instagram']" size="3x" />
+            <font-awesome-icon :icon="['fab', 'instagram']" size="2x" />
 
             <font-awesome-icon icon="intagram"></font-awesome-icon>
           </a>
 
           <a class="text-white" href="#">
-            <font-awesome-icon :icon="['fab', 'linkedin']" size="3x" />
+            <font-awesome-icon :icon="['fab', 'linkedin']" size="2x" />
 
             <font-awesome-icon icon="linkedin"></font-awesome-icon>
           </a>
@@ -71,7 +70,7 @@
         </router-link>
         <a
           href="http://localhost/soutenance/backend/public/admin"
-          class="d-block text-right mt-3"
+          class="d-block text-right mt-3 text-white"
           >Zone Admin</a
         >
       </b-col>
@@ -87,7 +86,7 @@ export default {
 
 <style scoped>
 .coordonnées img {
-  width: 40px;
+  width: 35px;
   margin-right: 10px;
 }
 .footer {
