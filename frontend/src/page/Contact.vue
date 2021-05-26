@@ -17,7 +17,7 @@
           loading="lazy"
         ></iframe>
       </b-col>
-      <b-col>
+      <b-col class="col-adresse">
         <address class="adresse d-flex">
           <div class="mb-3">
             <img
@@ -116,6 +116,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.col-adresse {
+  margin-top: 250px;
+}
 .adresse {
   flex-direction: column;
 }
