@@ -4,8 +4,6 @@
       <span class="point">.</span><span class="accolade">{</span> Bienvenue
       <span class="accolade"> }</span>
     </h1>
-    <h3>Nous</h3>
-
     <div class="text-center">
       <img
         class="boutbulles slide"
