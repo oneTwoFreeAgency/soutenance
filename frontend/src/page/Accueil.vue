@@ -1,49 +1,37 @@
 <template id="marker2">
   <b-container fluid style="background-color: #308c99">
+    <head>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+    </head>
+
     <h1 class="text-center text-white">
       <span class="point">.</span><span class="accolade">{</span> Bienvenue
       <span class="accolade"> }</span>
     </h1>
-    <div class="text-center">
+    <div class="responsive">
+      <!-- animate__zoomInRight -->
       <img
-        class="boutbulles slide"
+        class="boutbulles animate__animated animate__rotateInDownRight animate__delay-2s"
         src="../assets/image/bouteillebulles.png"
         alt="bouteille bulles agence"
-        data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="3000"
       />
-    </div>
-
-    <div class="text-center">
       <img
-        class="mobilebulles slide"
+        class="mobilebulles animate__animated animate__zoomInLeft"
         src="../assets/image/Champmobilebulles.png"
         alt="mobile bulles agence"
-        data-aos="fade-right"
-        data-aos-offset="450"
-        data-aos-easing="ease-in-sine"
       />
-    </div>
-
-    <div class="text-center">
       <img
-        class="tablettebulles slide"
+        class="tablettebulles animate__animated animate__zoomInRight"
         src="../assets/image/Champtablettebulles.png"
         alt="tablette bulles agence"
-        data-aos="fade-left"
-        data-aos-duration="3000"
       />
-    </div>
-
-    <div class="text-center">
       <img
-        class="ordibulles slide"
+        class="ordibulles animate__animated animate__zoomInLeft"
         src="../assets/image/champordibulles.png"
         alt="ordinateur bulles agence"
-        data-aos="fade-right"
-        data-aos-easing="linear"
-        data-aos-duration="1500"
       />
     </div>
 
@@ -52,9 +40,6 @@
         class="welcome"
         src="../assets/image/slideoneaerobic.png"
         alt="ordinateur bulles agence"
-        data-aos="fade-up"
-        data-aos-easing="linear"
-        data-aos-duration="1500"
       />
     </div>
   </b-container>
@@ -78,32 +63,40 @@ export default {
 .point {
   color: white;
 }
-
-.hardware {
-  width: 300px;
+.responsive {
+  position: relative;
+  height: 560px;
 }
 .boutbulles {
-  /* width: 350px; */
-  height: 150px;
+  position: absolute;
+  height: 100px;
+  left: 740px;
+  top: 0;
+  /* transform: rotate(90deg); */
 }
 .mobilebulles {
-  /* width: 100px; */
-  /* max-height: 100%; */
-  max-width: 40%;
-  /* height: 150px !important; */
+  position: absolute;
+  transform: translateX(-680px);
+  height: 150px;
+  top: 16%;
+  right: 0;
 }
 .tablettebulles {
-  /* width: 200px; */
-  /* height: 150px !important; */
-  max-width: 40%;
+  position: absolute;
+  transform: translateX(690px);
+  height: 150px;
+  top: 41%;
+  left: 0;
 }
 .ordibulles {
-  width: 250px;
-  /* height: 150px !important; */
-  /* max-width: 50%; */
+  position: absolute;
+  transform: translateX(-645px);
+  height: 150px;
+  top: 67%;
+  right: 0;
 }
 .welcome {
-  width: 500px;
+  height: 150px;
 }
 body,
 nav.navbar,
