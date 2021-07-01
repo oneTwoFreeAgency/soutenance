@@ -21,31 +21,41 @@ class FormulaireContactController extends AbstractController
         $contact=new Contacts();
         $form = $this->createForm(ContactType::class, $contact);
         $form->handleRequest($request);
+        ;
 
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($contact);
             $entityManager->flush();
             
-           /*  $email = (new Email())
-                ->from('hello@example.com')
-                ->to('contact@onetwofree.com')
+            $user = $form->getData();
+            $url =  './uploads/' . $user->getDocument();
+
+            $mail = (new Email())
+                ->from($user->getEmail())
+                ->to('philippe.mariou@colombbus.org')
                 //->cc('cc@example.com')
                 //->bcc('bcc@example.com')
                 //->replyTo('fabien@example.com')
                 //->priority(Email::PRIORITY_HIGH)
-                ->subject('Time for Symfony Mailer!')
-                ->text('Sending emails is fun again!')
+                ->subject('Nouvelle demande de contact')
+                ->text('Sender : '.$user->getEmail().\PHP_EOL.$user->getMessage(),'text/plain')
                 ->html('<p>See Twig integration for better HTML integration!</p>');
+                if ( $user->getDocument()) {
+                    $mail
+                        ->attachFromPath($url);
+                }
+                ;
+            $mailer->send($mail);
 
-            $mailer->send($email); */
-
+           
             //return $this->redirectToRoute('contact_success');
+            $url = $this->generateUrl('index');
             return new Response("
             <html>
                 <body>
                     <p>Le message a bien été envoyé</p>  
-                    <a href=/>Retour</a>
+                    <a href=\"$url\">Retour</a>
                 </body>
             </html>
             ");
