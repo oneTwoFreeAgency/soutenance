@@ -4,7 +4,8 @@
     <b-container>
       <section class="p-3 mb-2">
         <h1 class="text-center titre">
-          <span class="point">.</span><span class="accolade">{</span> L'agence
+          <span class="point">.</span><span class="accolade">{</span> One Two
+          Works
           <span class="accolade"> }</span>
         </h1>
         <h2 class="text-center mb-4">{ 2,3 de nos réalisations }</h2>

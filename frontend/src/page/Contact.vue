@@ -3,7 +3,8 @@
     <div class="parallax mx-0"></div>
     <b-container>
       <h1 class="text-center text-white">
-        <span class="point">.</span><span class="accolade">{</span> Contact
+        <span class="point">.</span><span class="accolade">{</span> One Two from
+        To
         <span class="accolade"> }</span>
       </h1>
       <b-row>

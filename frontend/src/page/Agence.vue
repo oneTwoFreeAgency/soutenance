@@ -4,7 +4,7 @@
     <b-container>
       <section class="section p-5">
         <h1 class="text-center text-white">
-          <span class="point">.</span><span class="accolade">{</span> L'agence
+          <span class="point">.</span><span class="accolade">{</span> L'Agence
           <span class="accolade"> }</span>
         </h1>
         <b-row class="mt-5">
@@ -42,7 +42,7 @@
     <div class="parallax2 mx-0"></div>
     <b-container>
       <section class="section">
-        <h2 class="text-center">{ l'équipe }</h2>
+        <h2 class="text-center">{ One Two Team }</h2>
         <b-row>
           <b-col class="text-center">
             <h4>{ BINETOU }</h4>
