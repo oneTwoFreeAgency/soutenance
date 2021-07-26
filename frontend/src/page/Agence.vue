@@ -1,6 +1,6 @@
 <template id="marker2">
   <b-container fluid>
-    <div class="parallax mx-0"></div>
+    <div class="parallax mx-0 d-none d-md-block"></div>
     <b-container>
       <section class="section p-5">
         <h1 class="text-center text-white">
@@ -39,8 +39,8 @@
         </b-row>
       </section>
     </b-container>
-    <div class="parallax2 mx-0"></div>
-    <b-container>
+    <div class="parallax2 mx-0 d-none d-md-block"></div>
+    <b-container class="mt-5 mt-lg-0">
       <section class="section">
         <h2 class="text-center">{ One Two Team }</h2>
         <b-row>
