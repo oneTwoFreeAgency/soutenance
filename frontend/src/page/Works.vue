@@ -9,6 +9,14 @@
           <span class="accolade"> }</span>
         </h1>
         <h2 class="text-center mb-4">{ 2,3 de nos réalisations }</h2>
+        <ul>
+          <li>Création visuelle</li>
+          <li>Recommandation stratégique</li>
+          <li>Création et refonte de site</li>
+          <li>Audit technique</li>
+          <li></li>
+          <li></li>
+        </ul>
         <b-row class="mb-5">
           <b-col class="clients" data-aos="fade-left" aos-init aos-animate>
             <button type="button" class="btn" @click="showModal">
