@@ -1,7 +1,7 @@
 <template>
-  <div class="footer mt-2 py-2">
+  <b-container class="footer mt-4 py-2">
     <b-row align-h="between">
-      <b-col cols="3">
+      <b-col cols="3" class="d-md-block d-none">
         <img
           class="ml-2"
           src="../assets/image/logofooterblanc.png"
@@ -10,24 +10,41 @@
         />
       </b-col>
       <b-col cols="6" class="coordonnées mt-4">
-        <div class="mb-2">
-          <img
-            src="../assets/image/telephoneiconeblanc.png"
-            alt="telephone agence"
-          />
-          <a class="text-white" href="tel:+33777524387">07.77.52.43.87</a>
+        <div class="mb-2 ml-md-0 ml-5">
+          <a class="text-white d-inline-flex" href="tel:+33777524387">
+            <img
+              src="../assets/image/telephoneiconeblanc.png"
+              alt="telephone agence"
+            />
+            <span class="d-none d-md-block">07.77.52.43.87</span>
+          </a>
         </div>
-        <div class="mb-2">
-          <img src="../assets/image/arobaseblanc.png" alt="email agence" />
-          <a class="text-white" href="mailto:onetwofreeagency@gmail.com"
-            >onetwofreeagency@gmail.com</a
+        <div class="mb-2 ml-md-0 ml-5">
+          <a
+            class="text-white d-inline-flex"
+            href="mailto:onetwofreeagency@gmail.com"
           >
+            <img src="../assets/image/arobaseblanc.png" alt="email agence" />
+            <span class="d-none d-md-block">onetwofreeagency@gmail.com</span>
+          </a>
         </div>
-        <div>
-          <img src="../assets/image/mapiconeBLANC1.png" alt="adresse agence" />
-          <span class="text-white">10 rue du Terrage, 75010 PARIS</span>
+        <div class="ml-md-0 ml-5">
+          <a
+            href="https://goo.gl/maps/qFAWmLiak3weYBH57"
+            class="d-inline-flex"
+            target="_blank"
+          >
+            <img
+              src="../assets/image/mapiconeBLANC1.png"
+              alt="adresse agence"
+            />
+            <span class="text-white d-none d-md-block"
+              >10 rue du Terrage, 75010 PARIS</span
+            >
+          </a>
         </div>
       </b-col>
+
       <b-col class="mt-4">
         <div class="reseaux text-right">
           <a
@@ -75,7 +92,7 @@
         >
       </b-col>
     </b-row>
-  </div>
+  </b-container>
 </template>
 
 <script>
@@ -94,7 +111,7 @@ export default {
 }
 
 #logo {
-  width: 150px;
+  width: 100px;
 }
 
 a,
