@@ -14,7 +14,10 @@
     <div class="responsive">
       <!-- animate__zoomInRight -->
       <img
-        class="boutbulles animate__animated animate__rotateInDownRight animate__delay-2s"
+        class="
+          boutbulles
+          animate__animated animate__rotateInDownRight animate__delay-2s
+        "
         src="../assets/image/bouteillebulles.png"
         alt="bouteille bulles agence"
       />
@@ -56,7 +59,7 @@ export default {
 };
 </script>
 
-<style >
+<style scoped>
 .accolade {
   color: #fbd100;
 }
@@ -97,10 +100,5 @@ export default {
 }
 .welcome {
   height: 150px;
-}
-body,
-nav.navbar,
-html {
-  background-color: #308c99 !important;
 }
 </style>
