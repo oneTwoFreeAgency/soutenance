@@ -58,7 +58,7 @@
             <font-awesome-icon icon="linkedin"></font-awesome-icon>
           </a>
         </b-col>
-        <b-col class="d-flex">
+        <b-col class="d-none d-lg-flex">
           <router-link
             to="/Mentions"
             custom
@@ -79,6 +79,17 @@
           > -->
         </b-col>
       </b-col>
+      <div class="d-block d-md-none mx-auto">
+        <router-link
+          to="/Mentions"
+          custom
+          v-slot="{ href, navigate, isActive }"
+        >
+          <a :active="isActive" :href="href" @click="navigate" class="mentions"
+            >Mentions légales</a
+          >
+        </router-link>
+      </div>
     </b-row>
   </b-container>
 </template>
