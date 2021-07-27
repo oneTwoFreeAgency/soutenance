@@ -3,9 +3,10 @@
     <div class="parallax mx-0 d-none d-md-block"></div>
     <b-container>
       <section class="section p-5">
-        <h1 class="text-center text-white">
-          <span class="point">.</span><span class="accolade">{</span> L'Agence
-          <span class="accolade"> }</span>
+        <h1 class="text-center">
+          <span class="point">.</span>OneTwoBorn<span class="accolade mr-1"
+            >{</span
+          ><span class="accolade">}</span>
         </h1>
         <b-row class="mt-5">
           <b-col class="text-center">
@@ -217,8 +218,11 @@ h3 {
 }
 .accolade {
   color: #fbd100;
+  font-size: 80px;
+  vertical-align: sub;
 }
 .point {
-  color: #308c99;
+  color: #fbd100;
+  font-size: 80px;
 }
 </style>

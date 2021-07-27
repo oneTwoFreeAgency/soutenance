@@ -3,9 +3,10 @@
     <div class="parallax mx-0"></div>
     <b-container>
       <h1 class="text-center text-white">
-        <span class="point">.</span><span class="accolade">{</span> One Two from
-        To
-        <span class="accolade"> }</span>
+        <span class="point">.</span
+        ><span class="accolade">{</span>OneTwoFromTo<span class="accolade"
+          >}</span
+        >
       </h1>
       <b-row>
         <b-col class="text-white">
@@ -144,7 +145,7 @@ img .col-adresse {
   color: #fbd100;
 }
 .point {
-  color: white;
+  color: #fbd100;
 }
 .parallax {
   /* The image used */
