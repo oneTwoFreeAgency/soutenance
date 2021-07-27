@@ -5,7 +5,7 @@
         <router-link to="/accueil" custom v-slot="{ href, navigate, isActive }">
           <img
             class="logo"
-            src="../assets/image/logonavbartransparent1.png"
+            src="../assets/image/logonavbar1.svg"
             alt="Slogan de l'agence"
             :active="isActive"
             :href="href"
@@ -60,15 +60,6 @@
               >Contact</b-nav-item
             >
           </router-link>
-          <router-link
-            to="/Mentions"
-            custom
-            v-slot="{ href, navigate, isActive }"
-          >
-            <b-nav-item :active="isActive" :href="href" @click="navigate"
-              >Mentions</b-nav-item
-            >
-          </router-link>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -89,7 +80,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .logo {
-  width: 900px;
+  width: 300px;
 }
 .liens {
   display: flex;
