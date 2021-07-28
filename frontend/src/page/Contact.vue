@@ -1,6 +1,6 @@
 <template>
   <b-container fluid>
-    <div class="parallax mx-0"></div>
+    <div class="parallax mx-0 d-none d-md-block"></div>
     <b-container>
       <h1 class="text-center text-white">
         <span class="point">.</span

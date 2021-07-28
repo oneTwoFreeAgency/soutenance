@@ -1,6 +1,6 @@
 <template>
   <b-container fluid>
-    <div class="parallax mx-0"></div>
+    <div class="parallax mx-0 d-none d-md-block"></div>
     <b-container>
       <section class="p-3 mb-2">
         <h1 class="text-center titre">

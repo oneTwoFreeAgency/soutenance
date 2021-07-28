@@ -1,6 +1,6 @@
 <template>
   <b-container fluid>
-    <div class="parallax mx-0"></div>
+    <div class="parallax mx-0 d-none d-md-block"></div>
     <b-container class="talent">
       <h1 class="text-center">
         <span class="point">.</span><span class="accolade">{</span>OneTwoSkills
