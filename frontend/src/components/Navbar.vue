@@ -6,12 +6,17 @@
           <img
             class="logo"
             src="../assets/image/logonavbar1.svg"
-            alt="Slogan de l'agence"
+            alt="Nom de l'agence"
             :active="isActive"
             :href="href"
             @click="navigate"
           />
         </router-link>
+        <img
+          src="../assets/image/signatNav1.svg"
+          alt="slogan de l'agence"
+          class="slogan"
+        />
       </b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
@@ -72,6 +77,13 @@ export default {
 <style scoped>
 .logo {
   width: 300px;
+}
+.slogan {
+  display: block;
+  width: 250px;
+  position: absolute;
+  top: 65px;
+  left: 20px;
 }
 .liens {
   display: flex;
