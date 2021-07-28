@@ -17,15 +17,6 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="liens">
           <router-link
-            to="/Accueil"
-            custom
-            v-slot="{ href, navigate, isActive }"
-          >
-            <b-nav-item :active="isActive" :href="href" @click="navigate"
-              >Accueil</b-nav-item
-            >
-          </router-link>
-          <router-link
             to="/agence"
             custom
             v-slot="{ href, navigate, isActive }"
