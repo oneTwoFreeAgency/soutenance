@@ -24,13 +24,11 @@ export default {
   src: url(./assets/font/FuturaCondensedExtraBold.otf);
 }
 
-body {
-  overflow-x: hidden;
-}
 body,
 nav.navbar,
 html {
   background-color: #308c99 !important;
+  overflow-x: hidden;
 }
 h1,
 h2,
