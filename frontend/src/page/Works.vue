@@ -251,19 +251,7 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* .parallax2 {
-   The image used 
-  background-image: url("../assets/image/Slideagence1.jpg");
 
-   Set a specific height 
-  min-height: 300px;
-
-   Create the parallax scrolling effect 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
 section {
   background: #ffffff;
 }
