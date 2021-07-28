@@ -1,34 +1,36 @@
 <template>
-  <div class="talent">
+  <b-container fluid>
     <div class="parallax mx-0"></div>
-    <h1 class="text-center">
-      <span class="point">.</span><span class="accolade">{</span>OneTwoSkills
-      <span class="accolade">}</span>
-    </h1>
+    <b-container class="talent">
+      <h1 class="text-center">
+        <span class="point">.</span><span class="accolade">{</span>OneTwoSkills
+        <span class="accolade">}</span>
+      </h1>
 
-    <div class="text-center pt-5">
-      <h2>{ Rejoindre la team OTF }</h2>
-      <p>Want to be Free ?</p>
-      <p>Tu es Free-lance, rejoins la famille Free</p>
-      <p>Merlin l'enchanteur t'attend !</p>
-    </div>
-    <b-row class="py-2">
-      <b-col>
-        <img
-          class="des mt-3 ml-3"
-          src="../assets/image/3dés.png"
-          alt="illustration talent onetwofree agence"
-        />
-      </b-col>
-      <b-col>
-        <img
-          class="form1"
-          src="../assets/image/capturecandidats.png"
-          alt="capture formulaire candidat"
-        />
-      </b-col>
-    </b-row>
-  </div>
+      <div class="text-center pt-5">
+        <h2>{ Rejoindre la team OTF }</h2>
+        <p>Want to be Free ?</p>
+        <p>Tu es Free-lance, rejoins la famille Free</p>
+        <p>Merlin l'enchanteur t'attend !</p>
+      </div>
+      <b-row class="py-2">
+        <b-col>
+          <img
+            class="des mt-3 ml-3"
+            src="../assets/image/3dés.png"
+            alt="illustration talent onetwofree agence"
+          />
+        </b-col>
+        <b-col>
+          <img
+            class="form1"
+            src="../assets/image/capturecandidats.png"
+            alt="capture formulaire candidat"
+          />
+        </b-col>
+      </b-row>
+    </b-container>
+  </b-container>
 </template>
 
 <style scoped>
