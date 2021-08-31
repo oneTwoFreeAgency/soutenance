@@ -27,7 +27,7 @@
             v-slot="{ href, navigate, isActive }"
           >
             <b-nav-item :active="isActive" :href="href" @click="navigate"
-              >l'agence</b-nav-item
+              >{ l'Agence }</b-nav-item
             >
           </router-link>
 
@@ -37,7 +37,7 @@
             v-slot="{ href, navigate, isActive }"
           >
             <b-nav-item :active="isActive" :href="href" @click="navigate"
-              >Talents</b-nav-item
+              >Talents { }</b-nav-item
             >
           </router-link>
 

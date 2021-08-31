@@ -9,14 +9,38 @@
           <span class="accolade"> }</span>
         </h1>
         <h2 class="text-center mb-4">{ 2,3 de nos réalisations }</h2>
-        <ul>
-          <li>Création visuelle</li>
-          <li>Recommandation stratégique</li>
-          <li>Création et refonte de site</li>
-          <li>Audit technique</li>
-          <li></li>
-          <li></li>
-        </ul>
+        <!-- <img
+          src="../assets/image/svg/oneTwoTitreShotsB.svg"
+          alt="nos realisations"
+        /> -->
+        <div>
+          <a href="#"> <p>Création visuelle</p></a>
+          <a href="#"> <p>Recommandation stratégique</p></a>
+          <a href="#">
+            <p>Création et refonte de site</p>
+          </a>
+          <a href="">
+            <p>Audit technique</p>
+          </a>
+          <a href="">
+            <p></p>
+          </a>
+          <a href="">
+            <p></p>
+          </a>
+          <a href="">
+            <p></p>
+          </a>
+          <a href="">
+            <p></p>
+          </a>
+          <a href="">
+            <p></p>
+          </a>
+          <a href="">
+            <p></p>
+          </a>
+        </div>
         <b-row class="mb-5">
           <b-col class="clients" data-aos="fade-left" aos-init aos-animate>
             <button type="button" class="btn" @click="showModal">

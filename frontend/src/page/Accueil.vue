@@ -41,7 +41,7 @@
     <div class="text-center">
       <img
         class="welcome"
-        src="../assets/image/slideoneaerobic.png"
+        src="../assets/image/svg/slideAerobic.svg"
         alt="ordinateur bulles agence"
       />
     </div>

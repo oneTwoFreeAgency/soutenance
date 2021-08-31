@@ -1,6 +1,12 @@
 <template id="marker2">
   <b-container fluid>
-    <div class="parallax mx-0 d-none d-md-block"></div>
+    <div class="mx-0 d-none d-md-block">
+      <!-- <img
+        class="signette d-block mx-auto"
+        src="../assets/image/svg/slideBoysBand.svg"
+        alt="signature de l'agence"
+      /> -->
+    </div>
     <b-container>
       <section class="section p-5">
         <h1 class="text-center">
@@ -181,7 +187,7 @@
 <style scoped>
 .parallax {
   /* The image used */
-  background-image: url("../assets/image/slideone-boysband.png");
+  /* background-image: url("../assets/image/slideone-boysband.png"); */
   /* Set a specific height */
   min-height: 300px;
   /* Create the parallax scrolling effect */
@@ -224,5 +230,13 @@ h3 {
 .point {
   color: #fbd100;
   font-size: 80px;
+}
+.signette {
+  font-family: "FuturaCondensedExtraBold";
+  width: 1000px;
+}
+@font-face {
+  font-family: "FuturaCondensedExtraBold";
+  src: url(../assets/font/FuturaCondensedExtraBold.otf);
 }
 </style>
