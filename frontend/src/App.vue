@@ -27,7 +27,7 @@ export default {
 body,
 nav.navbar,
 html {
-  background-color: #308c99 !important;
+  background-color: #2f8b97 !important;
   overflow-x: hidden;
 }
 h1,
