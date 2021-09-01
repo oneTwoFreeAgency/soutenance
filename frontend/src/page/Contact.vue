@@ -1,6 +1,7 @@
 <template>
   <b-container fluid>
-    <div class="parallax mx-0 d-none d-md-block"></div>
+    <SlideTelephone />
+    <!-- <div class="parallax mx-0 d-none d-md-block"></div> -->
     <b-container>
       <h1 class="text-center text-white">
         <span class="point">.</span
@@ -101,14 +102,12 @@
 
 <script>
 import Modal from "../components/Modal";
+import SlideTelephone from "../components/SlideTelephone.vue";
 
 export default {
-  name: "HelloWorld",
-  props: {
-    msg: String,
-  },
   components: {
     Modal,
+    SlideTelephone,
   },
   data() {
     return {
@@ -158,17 +157,4 @@ img .col-adresse {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* .parallax2 {
-   The image used 
-  background-image: url("../assets/image/Slideagence1.jpg");
-
-   Set a specific height 
-  min-height: 300px;
-
-   Create the parallax scrolling effect 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
 </style>

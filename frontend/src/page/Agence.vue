@@ -1,14 +1,6 @@
 <template id="marker2">
-  <b-container>
-    <div class="mx-0 d-none d-md-block test">
-      <h1 class="dynamic-text-shadow">
-        <p class="slogan">
-          <span class="deco">.</span>oneTwoFree<span class="deco">{</span
-          >L'agence web,
-        </p>
-        <p class="slogan">pas le club d'aérobic.<span class="deco">}</span></p>
-      </h1>
-    </div>
+  <b-container fluid>
+    <SlideAerobic />
     <b-container>
       <section class="section p-5">
         <h2 class="text-center titre_born">
@@ -54,8 +46,8 @@
       </section>
     </b-container>
     <div class="parallax2 mx-0 d-none d-md-block"></div>
-    <b-container class="mt-5 mt-lg-0">
-      <section class="section">
+    <b-container>
+      <section class="section mt-5 mt-lg-0">
         <h2 class="text-center">{ One Two Team }</h2>
         <b-row>
           <b-col class="text-center">
@@ -191,6 +183,16 @@
   </b-container>
 </template>
 
+<script>
+import SlideAerobic from "../components/SlideAerobic.vue";
+
+export default {
+  components: {
+    SlideAerobic,
+  },
+};
+</script>
+
 <style scoped>
 .parallax2 {
   /* The image used */
@@ -227,46 +229,7 @@ h3 {
   color: #fbd200;
   font-size: 80px;
 }
-.signette {
-  font-family: "FuturaCondensedExtraBold";
-  width: 1000px;
-}
-@font-face {
-  font-family: "FuturaCondensedExtraBold";
-  src: url(../assets/font/FuturaCondensedExtraBold.otf);
-}
-@font-face {
-  font-family: "FuturaExtraBold";
-  src: url(../assets/font/futura-extra-bold.ttf);
-}
-@font-face {
-  font-family: "FuturaBold";
-  src: url(../assets/font/unicode.futurab.ttf);
-}
-@import url(https://fr.allfont.net/allfont.css?fonts=futura-bold);
-.dynamic-text-shadow {
-  text-shadow: 0.1em 0.1em 0 #265973;
-}
-.test {
-  display: grid;
-  gap: 1ch;
-}
-.deco {
-  color: #fbd200;
-  font-size: 6rem;
-}
-h1 {
-  text-align: center;
-  font-size: 4rem;
-  font-weight: 900;
-  line-height: 1.1;
-  /* font-family: "FuturaExtraBold", "arial" !important; */
-  /* font-family: "Futura-Bold", arial; */
-  font-family: "FuturaBold";
-}
-.slogan {
-  color: white;
-}
+
 .titre_born2 {
   width: 300px;
 }

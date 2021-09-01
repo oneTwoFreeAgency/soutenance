@@ -1,6 +1,7 @@
 <template>
   <b-container fluid>
-    <div class="parallax mx-0 d-none d-md-block"></div>
+    <SlideClient />
+    <!-- <div class="parallax mx-0 d-none d-md-block"></div> -->
     <b-container>
       <section class="p-3 mb-2">
         <h1 class="text-center titre">
@@ -242,10 +243,12 @@
 import Modal from "../components/Modal";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import SlideClient from "../components/SlideClient.vue";
 
 export default {
   components: {
     Modal,
+    SlideClient,
   },
   created() {
     AOS.init();

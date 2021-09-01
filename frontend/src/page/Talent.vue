@@ -1,6 +1,7 @@
 <template>
   <b-container fluid>
-    <div class="parallax mx-0 d-none d-md-block"></div>
+    <SlideAlgerie />
+    <!-- <div class="parallax mx-0 d-none d-md-block"></div> -->
     <b-container class="talent">
       <h1 class="text-center">
         <span class="point">.</span><span class="accolade">{</span>OneTwoSkills
@@ -33,6 +34,16 @@
   </b-container>
 </template>
 
+<script>
+import SlideAlgerie from "../components/SlideAlgerie.vue";
+
+export default {
+  components: {
+    SlideAlgerie,
+  },
+};
+</script>
+
 <style scoped>
 .parallax {
   /* The image used */
@@ -47,10 +58,10 @@
 }
 h1,
 h2 {
-  color: #308c99;
+  color: #2f8b97;
 }
 h3 {
-  color: #fbd100;
+  color: #fbd200;
 }
 /* img {
   width: 300px;
@@ -66,9 +77,6 @@ h3 {
 }
 .form1 {
   width: 100%;
-}
-.podium {
-  width: 250px;
 }
 .des {
   width: 200px;
