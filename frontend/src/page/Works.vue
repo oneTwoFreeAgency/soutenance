@@ -14,28 +14,39 @@
           alt="nos realisations"
         /> -->
         <div>
+          Intranet – Extranet / Outil métier digital Acquisition de trafic /
+          Activation Régie & Délégation de talents Formation Webmarketing
+
+          <router-link
+            to="/CreationRefonte"
+            custom
+            v-slot="{ href, navigate, isActive }"
+          >
+            <a :active="isActive" :href="href" @click="navigate">
+              Création et refonte de site Web
+            </a>
+          </router-link>
+
+          <a href="">
+            <p></p>
+          </a>
+          <a href="">
+            <p></p>
+          </a>
+          <a href="">
+            <p>Identité de marque</p>
+          </a>
           <a href="#"> <p>Création visuelle</p></a>
           <a href="#"> <p>Recommandation stratégique</p></a>
-          <a href="#">
-            <p>Création et refonte de site</p>
-          </a>
           <a href="">
             <p>Audit technique</p>
           </a>
           <a href="">
-            <p></p>
+            <p>Réseaux sociaux</p>
           </a>
+
           <a href="">
-            <p></p>
-          </a>
-          <a href="">
-            <p></p>
-          </a>
-          <a href="">
-            <p></p>
-          </a>
-          <a href="">
-            <p></p>
+            <p>Site e-commerce</p>
           </a>
           <a href="">
             <p></p>
