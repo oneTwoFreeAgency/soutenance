@@ -8,11 +8,6 @@
         </p>
         <p class="slogan">pas le club d'aérobic.<span class="deco">}</span></p>
       </h1>
-      <!-- <img
-        class="signette d-block mx-auto"
-        src="../assets/image/svg/slideBoysBand.svg"
-        alt="signature de l'agence"
-      /> -->
     </div>
     <b-container>
       <section class="section p-5">
