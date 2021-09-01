@@ -24,6 +24,16 @@ export default {
   src: url(./assets/font/FuturaCondensedExtraBold.otf);
 }
 
+@font-face {
+  font-family: "FuturaBold";
+  src: url(./assets/font/unicode.futurab.ttf);
+}
+
+@font-face {
+  font-family: "FuturaExtraBold";
+  src: url(./assets/font/futura-extra-bold.ttf);
+}
+
 body,
 nav.navbar,
 html {
