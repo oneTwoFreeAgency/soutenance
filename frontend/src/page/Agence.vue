@@ -1,6 +1,13 @@
 <template id="marker2">
-  <b-container fluid>
-    <div class="mx-0 d-none d-md-block">
+  <b-container>
+    <div class="mx-0 d-none d-md-block test">
+      <h1 class="dynamic-text-shadow">
+        <p class="slogan">
+          <span class="deco">.</span>oneTwoFree<span class="deco">{</span
+          >L'agence web,
+        </p>
+        <p class="slogan">pas le club d'aérobic.<span class="deco">}</span></p>
+      </h1>
       <!-- <img
         class="signette d-block mx-auto"
         src="../assets/image/svg/slideBoysBand.svg"
@@ -9,11 +16,16 @@
     </div>
     <b-container>
       <section class="section p-5">
-        <h1 class="text-center">
+        <h2 class="text-center titre_born">
+          <img
+            class="titre_born2"
+            src="../assets/image/svg/oneTwoTitreBeginsY.svg"
+            alt="titre de la page"
+          />
           <span class="point">.</span>OneTwoBorn<span class="accolade mr-1"
             >{</span
           ><span class="accolade">}</span>
-        </h1>
+        </h2>
         <b-row class="mt-5">
           <b-col class="text-center">
             <h3>Notre histoire</h3>
@@ -185,17 +197,6 @@
 </template>
 
 <style scoped>
-.parallax {
-  /* The image used */
-  /* background-image: url("../assets/image/slideone-boysband.png"); */
-  /* Set a specific height */
-  min-height: 300px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .parallax2 {
   /* The image used */
   background-image: url("../assets/image/slideonemousquetaire.png");
@@ -215,20 +216,20 @@
 .section {
   background-color: #ffffff;
 }
-h1,
+.titre_born,
 h3 {
-  color: #308c99 !important;
+  color: #2f8b97 !important;
 }
 .accroche {
   width: 250px;
 }
 .accolade {
-  color: #fbd100;
+  color: #fbd200;
   font-size: 80px;
   vertical-align: sub;
 }
 .point {
-  color: #fbd100;
+  color: #fbd200;
   font-size: 80px;
 }
 .signette {
@@ -238,5 +239,40 @@ h3 {
 @font-face {
   font-family: "FuturaCondensedExtraBold";
   src: url(../assets/font/FuturaCondensedExtraBold.otf);
+}
+@font-face {
+  font-family: "FuturaExtraBold";
+  src: url(../assets/font/futura-extra-bold.ttf);
+}
+@font-face {
+  font-family: "FuturaBold";
+  src: url(../assets/font/unicode.futurab.ttf);
+}
+@import url(https://fr.allfont.net/allfont.css?fonts=futura-bold);
+.dynamic-text-shadow {
+  text-shadow: 0.1em 0.1em 0 #265973;
+}
+.test {
+  display: grid;
+  gap: 1ch;
+}
+.deco {
+  color: #fbd200;
+  font-size: 6rem;
+}
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1.1;
+  /* font-family: "FuturaExtraBold", "arial" !important; */
+  /* font-family: "Futura-Bold", arial; */
+  font-family: "FuturaBold";
+}
+.slogan {
+  color: white;
+}
+.titre_born2 {
+  width: 300px;
 }
 </style>
