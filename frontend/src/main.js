@@ -45,6 +45,22 @@ import Mentions from './page/Mentions'
 import Accueil from './page/Accueil'
 import Modal from './components/Modal'
 import CreationRefonte from './page/CreationRefonte'
+import IdentiteMarque from './page/IdentiteMarque'
+import Reseaux from './page/Reseaux'
+import SitesEcommerce from './page/SitesEcommerce'
+import StrategieContent from './page/StrategieContent'
+import DeveloppementCode from './page/DeveloppementCode'
+import StratDigitale from './page/StratDigitale'
+import Realisations from './page/Realisations'
+import WorksTest from './page/WorksTest'
+
+
+
+
+
+
+
+
 
 
 
@@ -58,6 +74,22 @@ const routes = [
   { path: '/Modal', name: 'Modal', component: Modal },
   { path: '/', redirect: { name: 'Accueil' }, component: Accueil },
   { path: '/CreationRefonte', name: 'CreationRefonte', component: CreationRefonte },
+  { path: '/IdentiteMarque', name: 'IdentiteMarque', component: IdentiteMarque },
+  { path: '/Reseaux', name: 'Reseaux', component: Reseaux },
+  { path: '/SitesEcommerce', name: 'SitesEcommerce', component: SitesEcommerce },
+  { path: '/StrategieContent', name: 'StrategieContent', component: StrategieContent },
+  { path: '/DeveloppementCode', name: 'DeveloppemengtCode', component: DeveloppementCode },
+  { path: '/StratDigitale', name: 'StratDigitale', component: StratDigitale },
+  { path: '/Realisations', name: 'Realisations', component: Realisations },
+  { path: '/WorksTest', name: 'WorksTest', component: WorksTest },
+
+
+
+
+
+
+
+
 ]
 
 const router = new VueRouter({
