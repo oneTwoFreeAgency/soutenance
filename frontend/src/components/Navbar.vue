@@ -5,7 +5,7 @@
         <router-link to="/accueil" custom v-slot="{ href, navigate, isActive }">
           <img
             class="logo"
-            src="../assets/image/logonavbar1.svg"
+            src="../assets/image/svg/oneTwoFreeNavJ.svg"
             alt="Nom de l'agence"
             :active="isActive"
             :href="href"
@@ -13,7 +13,7 @@
           />
         </router-link>
         <img
-          src="../assets/image/signatNav1.svg"
+          src="../assets/image/svg/signatNavBlanc.svg"
           alt="slogan de l'agence"
           class="slogan"
         />
@@ -89,6 +89,7 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  font-weight: bold;
 }
 </style>
 
