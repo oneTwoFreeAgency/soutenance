@@ -43,7 +43,8 @@ import Talent from './page/Talent'
 import Agence from './page/Agence'
 import Mentions from './page/Mentions'
 import Accueil from './page/Accueil'
-import Modal from './components/Modal'
+import FormulaireCR from './components/FormulaireCR'
+import FormulaireBrief from './components/FormulaireBrief'
 import CreationRefonte from './page/CreationRefonte'
 
 
@@ -55,8 +56,9 @@ const routes = [
   { path: '/agence', name: 'agence', component: Agence },
   { path: '/Mentions', name: 'Mentions', component: Mentions },
   { path: '/Accueil', name: 'Accueil', component: Accueil },
-  { path: '/Modal', name: 'Modal', component: Modal },
   { path: '/', redirect: { name: 'Accueil' }, component: Accueil },
+  { path: '/FormulaireCR', name: 'FormulaireCR', component: FormulaireCR },
+  { path: '/FormulaireBrief', name: 'FormulaireBrief', component: FormulaireBrief },
   { path: '/CreationRefonte', name: 'CreationRefonte', component: CreationRefonte },
 ]
 
