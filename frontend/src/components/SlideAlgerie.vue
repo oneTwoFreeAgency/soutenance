@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-0 d-none d-md-block test">
+  <div class="mx-0 d-none d-md-block">
     <h1 class="dynamic-text-shadow">
       <p class="slogan_blanc">
         <span class="deco">.</span>oneTwoFree<span class="deco">{</span
@@ -22,10 +22,6 @@ export default {
 .dynamic-text-shadow {
   text-shadow: 0.1em 0.1em 0 #265973;
 }
-/* .test {
-  display: grid;
-  gap: 1ch;
-} */
 .deco {
   color: white;
   font-size: 6rem;

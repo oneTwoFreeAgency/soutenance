@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-0 d-none d-md-block test">
+  <div class="mx-0 d-none d-md-block">
     <h1 class="dynamic-text-shadow">
       <p class="slogan_blanc">
         <span class="deco">.</span>oneTwoFree<span class="deco">{</span
