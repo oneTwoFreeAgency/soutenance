@@ -53,28 +53,17 @@
       <b-row class="mt-5">
         <b-col class="text-white">
           <h2>Contactez-nous</h2>
-          <p class="text-center">Par ici</p>
-          <button type="button" class="btn" @click="isModalVisible1 = true">
+          <button type="button" class="btn" @click="isModalVisible = true">
             <img
               class="form2"
               src="../assets/image/logofooter4.png"
               alt="illustration Contact"
             />
           </button>
-          <Modal v-show="isModalVisible1" @close="isModalVisible1 = false">
-            <template v-slot:header>
-              <h1>Le titre de ma page</h1>
-            </template>
-            <template v-slot:body>
-              <p>Ici les infos de contact</p>
-            </template>
-            <template v-slot:footer>
-              <p>Ici les infos de contact</p>
-            </template>
-          </Modal>
+          <!-- <Modal v-show="isModalVisible1" @close="isModalVisible1 = false"> -->
         </b-col>
         <b-col class="text-white">
-          <h2>Le patron c'est Vous !</h2>
+          <h2>.oneTwoBrief</h2>
           <p class="text-center">C'est quoi l'idée ?</p>
           <button type="button" class="btn" @click="isModalVisible2 = true">
             <img
@@ -83,44 +72,39 @@
               alt="illustration brief / devis"
             />
           </button>
-          <Modal v-show="isModalVisible2" @close="isModalVisible2 = false">
-            <template v-slot:header>
-              <h1>Le titre de ma page</h1>
-            </template>
-            <template v-slot:body>
-              <p>Ici les infos de contact</p>
-            </template>
-            <template v-slot:footer>
-              <p>Ici les infos de contact</p>
-            </template>
-          </Modal>
         </b-col>
       </b-row>
     </b-container>
+    <FormulaireCR v-show="isModalVisible" @close="closeModal" />
+    <FormulaireBrief v-show="isModalVisible2" @close="closeModal" />
   </b-container>
 </template>
 
 <script>
-import Modal from "../components/Modal";
+import FormulaireCR from "../components/FormulaireCR.vue";
+import FormulaireBrief from "../components/FormulaireBrief.vue";
 import SlideTelephone from "../components/SlideTelephone.vue";
 
 export default {
   components: {
-    Modal,
+    FormulaireCR,
+    FormulaireBrief,
     SlideTelephone,
   },
   data() {
     return {
-      isModalVisible1: false,
+      isModalVisible: false,
       isModalVisible2: false,
     };
   },
   methods: {
     showModal() {
       this.isModalVisible = true;
+      this.isModalVisible2 = true;
     },
     closeModal() {
       this.isModalVisible = false;
+      this.isModalVisible2 = false;
     },
   },
 };
