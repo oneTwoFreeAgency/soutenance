@@ -971,7 +971,7 @@ footer {
 .close {
   border: none;
   font-size: 70px;
-  margin-left: 100px;
+  margin-left: 40px;
   cursor: pointer;
   font-weight: bold;
   color: #fbd200;
